@@ -1,0 +1,16 @@
+{
+  "version": "1.9.0",
+  "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
+  "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
+  "dll_sha256": "6b9f72a479197816b93848e1bd7af7a2d0275eb237f589a73bbdda5456f744a3",
+  "injector_sha256": "c599964283d056f36ce70cab30f376e128be8f9042cb862b6fc2e9efa98c6530",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v1.9.0",
+  "latest_features": [
+    "First official release of the polished C7 client",
+    "Removed admin panel; client is now fully self-contained",
+    "Injector always fetches the latest DLL and blocks injection if update download fails",
+    "Whitelist is compiled privately into the DLL from access_policy.json",
+    "Release announcements are posted to the project Discord webhook",
+    "Release pipeline also publishes DLL and injector to FlyMC1/C7-PUBLIC"
+  ]
+}
