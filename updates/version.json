@@ -1,14 +1,14 @@
 {
-  "version": "1.9.8",
+  "version": "2.0.2",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "2ba7923bff34a1595597fca8df9d08ea7eec04ecc68c409e2757d9474ce4094e",
-  "injector_sha256": "540cf28e9e4d287ba07519f6940afc46b22c0cfd8057ab8c7b22c7f97e53404e",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v1.9.8",
+  "dll_sha256": "b732f9429c0572e93d5d2e7f5050848ae416d8ee4c5c209df205987610c2da68",
+  "injector_sha256": "508ef3d35a525cd26ed637eb22fa35fca9cec5f2a8bf9bb2e38130c387b514c1",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.2",
   "latest_features": [
-  "Minimap update: size can now scale up to 3x larger for better visibility",
-  "Minimap update: default radar style is now square (circle mode still available)",
-  "Minimap update: improved pseudo-3D terrain detail and village/structure readability",
-  "Minimap stability: added tighter rendering safety clamps for high-detail modes"
-]
+    "Minimap resolution goes up to 128 (was 72), default set to midpoint for balanced quality",
+    "Fixed minimap rotation: dots and terrain now correctly align with player facing direction",
+    "Terrain map no longer flickers when moving; new areas load in progressively",
+    "Fixed policy exempt list: players with #discriminator now correctly matched against MCBE nametags"
+  ]
 }
