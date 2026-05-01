@@ -1,14 +1,14 @@
 {
-  "version": "2.0.4",
+  "version": "2.0.5",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "256eae4d18ab123fca3c6c4b5026c180be9da880b0f43378347bc866dfbb3233",
-  "injector_sha256": "3676d94bb2f5a6acd656d8b9d43b7cdf958b6bd88e763028c42d9e6d3e49c310",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.4",
+  "dll_sha256": "756f9b67366936d83120824425824f148b019c5f2cfbf42fe43622ad17f711d1",
+  "injector_sha256": "607435945d6080ea7c778be525c094cade960ba84f928bb3d8532da26357cbe4",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.5",
   "latest_features": [
-    "Minimap refresh rate increased again with center-priority bursts for near-instant scenery updates",
-    "Player-facing orientation corrected so forward direction matches map-up in player-rotation mode",
-    "Locator dots synced tighter with terrain yaw updates for more stable/accurate radar positions",
-    "ShulkerPreview activation hardened with broader inventory/chest slot detection and safer defaults"
+    "Fixed minimap crash by moving terrain sampling out of render-path world reads",
+    "Kept fast refresh by adding extra burst cache updates on tick",
+    "Maintains center-priority update behavior for near-field scenery",
+    "Improves minimap stability during movement and high-frequency refresh"
   ]
 }
