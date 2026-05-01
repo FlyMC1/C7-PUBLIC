@@ -1,0 +1,14 @@
+{
+  "version": "1.9.2",
+  "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
+  "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
+  "dll_sha256": "4e781820fba5c0494c426b84fc6a55ce17d46220d5a30e040851801b3a5c50d8",
+  "injector_sha256": "cd953e4081c003a1275f5ee06cfd91648a8a13439c7f395b707bb9041baf546b",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v1.9.2",
+  "latest_features": [
+    "Fixed injector update manifest fetch to use FlyMC1/C7-PUBLIC",
+    "Public release now ships version.json so launcher updates are always reachable",
+    "Public repo sync now includes version.json and updates/version.json",
+    "Injector still enforces latest-only update behavior with no stale fallback"
+  ]
+}
