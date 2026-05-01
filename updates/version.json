@@ -1,14 +1,13 @@
 {
-  "version": "1.9.4",
+  "version": "1.9.6",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "3dcaa7edfa246ce56c2b3846b913703786b2f3009d5dfb594d11eeccee2e7a3a",
-  "injector_sha256": "baa6ad09bec1a07b84f7e1d9a4af8abc0459188bd79e04b9ceff079a09b41a93",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v1.9.4",
+  "dll_sha256": "35f17e236fe3d1160a21cb33e7b8a5259acfc9cc887d716111ae1c96481ca463",
+  "injector_sha256": "b224b818cc65e19417c1493a5fffa5e4b8b90b603e792151f5931518bc89d3e0",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v1.9.6",
   "latest_features": [
-  "Hotfix: fixed PortalESP crash by guarding null render/player pointers",
-  "Hotfix: portal block validation now safely handles null block legacy",
-  "Hotfix: GetBlock hook now checks module pointers before use",
-  "Stability: safer tunnel solidity checks to prevent invalid dereferences"
+  "Policy update: expanded VIP whitelist entries",
+  "Policy update: regenerated embedded policy for DLL release",
+  "Release keeps public-manifest update flow for latest-only injector behavior"
 ]
 }
