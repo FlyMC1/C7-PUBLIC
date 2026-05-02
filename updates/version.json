@@ -1,14 +1,15 @@
 {
-  "version": "2.0.14",
+  "version": "2.0.15",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "c8e95281557688a9f936fbdd025183ce1c4f5044ea56b388a1c5938c82ce1b19",
-  "injector_sha256": "b0d9e94881536902b7886d80e5b0d119e28607accfc668ffbf968e069fac4cb7",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.14",
+  "dll_sha256": "c14346914df632b667e7e5f098ebfdca484dd72fbc1cda728c9c961f6ba2eada",
+  "injector_sha256": "aa0f499f2686abe83933362d5a1dc893cea47ae17bda7deb7bdc6142bde431f0",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.15",
   "latest_features": [
-  "WorldDownload now reports the exact saved .mcpack/.mcworld output path and creates export folders more reliably",
-  "World renderer is denser, supports drag-to-rotate view control, and exposes preview/point controls in ClickGUI settings",
-  "ClickGUI top tabs are larger with configurable dual header lines, and column spacing now scales to reduce overlap",
-  "New HybridPVP category/tab added and AutoPVP moved into it with experimental autotune and hotbar utility"
+  "HybridPVP now has a dedicated full-page layout with large switch cards and tuning sliders for AutoPVP",
+  "ClickGUI top tabs now default to max size, columns align directly under tabs, and content gap is configurable",
+  "WorldDownload now saves under C:\\Users\\daniel hahaha\\, supports surface-only capture, and exposes capture depth controls",
+  "Minimap refresh load was reduced and entity dots are stabilized in radar space while rotating",
+  "ShulkerPreview now uses a packet-independent live container snapshot flow"
 ]
 }
