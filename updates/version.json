@@ -1,14 +1,14 @@
 {
-  "version": "2.0.10",
+  "version": "2.0.12",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "756f9b67366936d83120824425824f148b019c5f2cfbf42fe43622ad17f711d1",
-  "injector_sha256": "607435945d6080ea7c778be525c094cade960ba84f928bb3d8532da26357cbe4",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.10",
+  "dll_sha256": "672ba95e00de0650418df02f94a4c3aaefa99d205540e94da9b9e731f8031961",
+  "injector_sha256": "3a1827eb9c4dd16fe0193d7fdd2c8012fcfd72c6ad3037e72e9dd69ac966a8bf",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.12",
   "latest_features": [
-  "Release webhook routing updated to dedicated private Discord endpoint",
-  "Discord announcements now publish user-formatted updates with injector delivery flow",
-  "World render export: PNG/JPG/PPM with cross-platform fallback conversion support",
-  "AutoPVP advanced: local A* pathfinding plus learning profile pipeline"
+  "Injector now blocks injection when a newer launcher version is published",
+  "Startup update check no longer falls through to inject after self-update download failure",
+  "MSVC release build fixed by making Vec4::contains const for ClickGUI hitboxes",
+  "Public latest release manifest now ships with version.json alongside DLL and injector assets"
 ]
 }
