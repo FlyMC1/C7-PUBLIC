@@ -1,14 +1,14 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.10",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
   "dll_sha256": "756f9b67366936d83120824425824f148b019c5f2cfbf42fe43622ad17f711d1",
   "injector_sha256": "607435945d6080ea7c778be525c094cade960ba84f928bb3d8532da26357cbe4",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.5",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.10",
   "latest_features": [
-    "Fixed minimap crash by moving terrain sampling out of render-path world reads",
-    "Kept fast refresh by adding extra burst cache updates on tick",
-    "Maintains center-priority update behavior for near-field scenery",
-    "Improves minimap stability during movement and high-frequency refresh"
-  ]
+  "Release webhook routing updated to dedicated private Discord endpoint",
+  "Discord announcements now publish user-formatted updates with injector delivery flow",
+  "World render export: PNG/JPG/PPM with cross-platform fallback conversion support",
+  "AutoPVP advanced: local A* pathfinding plus learning profile pipeline"
+]
 }
