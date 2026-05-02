@@ -1,14 +1,14 @@
 {
-  "version": "2.0.12",
+  "version": "2.0.13",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "672ba95e00de0650418df02f94a4c3aaefa99d205540e94da9b9e731f8031961",
-  "injector_sha256": "3a1827eb9c4dd16fe0193d7fdd2c8012fcfd72c6ad3037e72e9dd69ac966a8bf",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.12",
+  "dll_sha256": "ca0c81081147f053c2ee0154ce5a176c39bfb92c465e27135ae4891e85251e42",
+  "injector_sha256": "6e8a4395e52866a209ab642cf0ba8402da4144b5c3092e9c9d71ea5b58c49f38",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.13",
   "latest_features": [
-  "Injector now blocks injection when a newer launcher version is published",
-  "Startup update check no longer falls through to inject after self-update download failure",
-  "MSVC release build fixed by making Vec4::contains const for ClickGUI hitboxes",
-  "Public latest release manifest now ships with version.json alongside DLL and injector assets"
+  "Player injection notifications now use their dedicated Discord webhook again",
+  "Release update announcements remain isolated to the release webhook",
+  "Injector still blocks injection when a newer launcher version is published",
+  "Public latest release manifest continues shipping with version.json alongside DLL and injector assets"
 ]
 }
