@@ -1,14 +1,14 @@
 {
-  "version": "2.0.22",
+  "version": "2.0.23",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "2578e704dca28f98a7cb75981af57459534e173bbd6c31a131df7457dbaf850d",
-  "injector_sha256": "7b772a02325b02b523cedc3e0de502beaddab045a80dbc695941105fd64879d5",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.22",
+  "dll_sha256": "56420bd54b9a8c3beb8e8dc30600ea2500bd8aa44c198005887f215c5a30d2fa",
+  "injector_sha256": "9ab285075ca5e14430163bcb2cef905d6c28bf6073242efacfb32a8f59926e78",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.23",
   "latest_features": [
-  "ClickGUI background now resolves from runtime module/exe/client paths so background.jpg appears reliably",
-  "AutoPVP now avoids fragile player nametag dereferences during threat scans",
-  "AutoPVP movement switched to safer direct pursuit with obstacle jump + strafe pressure",
-  "AutoPVP no longer stalls on heavy path recalculation loops that caused chase drop/crashes"
+  "ClickGUI now has global background opacity and dim controls behind all tabs",
+  "Background image lookup now accepts .jpg/.jpeg/.png/.webp across runtime folders",
+  "AutoPVP chase now uses crash-safe actor reads with simpler direct pursuit and jump cooldown",
+  "World renderer and world capture now use lower-cost sampling/scan defaults for faster 3D export"
 ]
 }
