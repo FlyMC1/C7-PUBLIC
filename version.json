@@ -1,14 +1,17 @@
 {
-  "version": "2.0.23",
+  "version": "2.0.25",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "56420bd54b9a8c3beb8e8dc30600ea2500bd8aa44c198005887f215c5a30d2fa",
-  "injector_sha256": "9ab285075ca5e14430163bcb2cef905d6c28bf6073242efacfb32a8f59926e78",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.23",
+  "dll_sha256": "61ac0f7b30d907cc07a45c026011b638d8b135ae5713cb8117a912b85f10ebf9",
+  "injector_sha256": "ecec206f9eea19d3930ccb9dd661e701c5ffb8200d38177955943b2ec549ffd7",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.25",
   "latest_features": [
-  "ClickGUI now has global background opacity and dim controls behind all tabs",
-  "Background image lookup now accepts .jpg/.jpeg/.png/.webp across runtime folders",
-  "AutoPVP chase now uses crash-safe actor reads with simpler direct pursuit and jump cooldown",
-  "World renderer and world capture now use lower-cost sampling/scan defaults for faster 3D export"
+  "3-tier whitelist system: public (limited modules), private (extra modules), admin (all modules including SmithingSpam and PacketAddresses)",
+  "SmithingSpam now auto-crafts colored shulkers at crafting tables with speed control",
+  "Completely HWID-based whitelist system (player names removed)",
+  "Admin HWID ef04f1b2-c8db-11ef-b9dd-806e6f6e6963 added with full access",
+  "Removed ClickGUI webhook logic entirely (including exempt-list remnants)",
+  "Injection webhook redesigned as Discord embed with player head icon, HWID, and access level",
+  "Separate download webhook for release announcements"
 ]
 }
