@@ -1,17 +1,15 @@
 {
-  "version": "2.0.25",
+  "version": "2.0.26",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "61ac0f7b30d907cc07a45c026011b638d8b135ae5713cb8117a912b85f10ebf9",
-  "injector_sha256": "ecec206f9eea19d3930ccb9dd661e701c5ffb8200d38177955943b2ec549ffd7",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.25",
+  "dll_sha256": "c7c83b70e51f343fac8015efcf99963c0239d5d27aa4594bdd436952db65f4fb",
+  "injector_sha256": "889337fa61dcdf65b8f2f925198e5f627b4fc9fc7eb1a491e5c4a182f8ba0427",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.26",
   "latest_features": [
-  "3-tier whitelist system: public (limited modules), private (extra modules), admin (all modules including SmithingSpam and PacketAddresses)",
-  "SmithingSpam now auto-crafts colored shulkers at crafting tables with speed control",
-  "Completely HWID-based whitelist system (player names removed)",
-  "Admin HWID ef04f1b2-c8db-11ef-b9dd-806e6f6e6963 added with full access",
-  "Removed ClickGUI webhook logic entirely (including exempt-list remnants)",
-  "Injection webhook redesigned as Discord embed with player head icon, HWID, and access level",
-  "Separate download webhook for release announcements"
+  "Added new Player module ShulkMod for one-shot shulker auto-craft automation",
+  "ShulkMod starts when inventory is opened, runs first auto-craft recipe, then takes output each cycle",
+  "Added configurable ShulkMod settings for craft speed and craft cycles",
+  "After cycle completion ShulkMod auto-enables NoPacket, ejects all shulker boxes, and restores NoPacket",
+  "ShulkMod runs once per activation and auto-disables after finishing"
 ]
 }
