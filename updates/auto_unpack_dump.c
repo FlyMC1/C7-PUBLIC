@@ -296,6 +296,100 @@ static const char *validate_pe64(const uint8_t *buf, size_t len) {
     return NULL;
 }
 
+static const uint8_t *rva_to_ptr(const uint8_t *buf, size_t len, DWORD rva) {
+    const IMAGE_DOS_HEADER *dos;
+    const IMAGE_NT_HEADERS64 *nt;
+    const IMAGE_SECTION_HEADER *sec;
+    WORD i;
+
+    if (!buf || len < sizeof(IMAGE_DOS_HEADER)) {
+        return NULL;
+    }
+    dos = (const IMAGE_DOS_HEADER *)buf;
+    if ((size_t)dos->e_lfanew + sizeof(IMAGE_NT_HEADERS64) > len) {
+        return NULL;
+    }
+    nt = (const IMAGE_NT_HEADERS64 *)(buf + dos->e_lfanew);
+    if (rva < nt->OptionalHeader.SizeOfHeaders && rva < len) {
+        return buf + rva;
+    }
+
+    sec = IMAGE_FIRST_SECTION(nt);
+    for (i = 0; i < nt->FileHeader.NumberOfSections; i++) {
+        DWORD va = sec[i].VirtualAddress;
+        DWORD span = sec[i].Misc.VirtualSize > sec[i].SizeOfRawData ? sec[i].Misc.VirtualSize : sec[i].SizeOfRawData;
+        if (rva >= va && rva < va + span) {
+            DWORD offset = sec[i].PointerToRawData + (rva - va);
+            if (offset < len) {
+                return buf + offset;
+            }
+            return NULL;
+        }
+    }
+    return NULL;
+}
+
+static int dll_name_resolves(const wchar_t *dll_dir, const wchar_t *dll_name) {
+    wchar_t candidate[MAX_PATH];
+    wchar_t found[MAX_PATH];
+
+    if (dll_dir && dll_dir[0]) {
+        swprintf(candidate, MAX_PATH, L"%s\\%s", dll_dir, dll_name);
+        if (file_exists(candidate)) {
+            return 1;
+        }
+    }
+
+    return SearchPathW(NULL, dll_name, NULL, MAX_PATH, found, NULL) != 0;
+}
+
+static int build_missing_import_report(const uint8_t *buf, size_t len, const wchar_t *dll_path, char *report, size_t report_len) {
+    const IMAGE_DOS_HEADER *dos;
+    const IMAGE_NT_HEADERS64 *nt;
+    const IMAGE_IMPORT_DESCRIPTOR *imp;
+    const uint8_t *imp_ptr;
+    wchar_t dll_dir[MAX_PATH] = {0};
+    int missing_count = 0;
+
+    report[0] = '\0';
+    get_parent_dir(dll_path, dll_dir, MAX_PATH);
+
+    dos = (const IMAGE_DOS_HEADER *)buf;
+    nt = (const IMAGE_NT_HEADERS64 *)(buf + dos->e_lfanew);
+    if (nt->OptionalHeader.NumberOfRvaAndSizes <= IMAGE_DIRECTORY_ENTRY_IMPORT) {
+        return 0;
+    }
+
+    imp_ptr = rva_to_ptr(buf, len, nt->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_IMPORT].VirtualAddress);
+    if (!imp_ptr) {
+        return 0;
+    }
+
+    imp = (const IMAGE_IMPORT_DESCRIPTOR *)imp_ptr;
+    while (imp->Name) {
+        const uint8_t *name_ptr = rva_to_ptr(buf, len, imp->Name);
+        wchar_t dll_name_w[MAX_PATH];
+        if (name_ptr) {
+            const char *name = (const char *)name_ptr;
+            if (MultiByteToWideChar(CP_ACP, 0, name, -1, dll_name_w, MAX_PATH) > 0) {
+                if (!dll_name_resolves(dll_dir, dll_name_w)) {
+                    char dll_name_a[MAX_PATH];
+                    if (WideCharToMultiByte(CP_UTF8, 0, dll_name_w, -1, dll_name_a, MAX_PATH, NULL, NULL) > 0) {
+                        if (report[0] != '\0') {
+                            strncat(report, "\n", report_len - strlen(report) - 1);
+                        }
+                        strncat(report, dll_name_a, report_len - strlen(report) - 1);
+                        missing_count++;
+                    }
+                }
+            }
+        }
+        imp++;
+    }
+
+    return missing_count;
+}
+
 static int get_remote_module_base(DWORD pid, const wchar_t *dll_path, uintptr_t *base_out) {
     HANDLE snap;
     MODULEENTRY32W me;
@@ -445,6 +539,7 @@ static int run_controller(const wchar_t *exe_path, const wchar_t *dll_path, cons
     size_t changed_bytes = 0;
     char *dll_u8 = NULL;
     char *out_u8 = NULL;
+    char missing_report[4096];
 
     if (!wide_to_utf8(dll_path, &dll_u8) || !wide_to_utf8(out_path, &out_u8)) {
         free(dll_u8);
@@ -481,6 +576,21 @@ static int run_controller(const wchar_t *exe_path, const wchar_t *dll_path, cons
         char msg[1024];
         log_printf("Input file is not a supported PE64 image: %s", pe_error);
         snprintf(msg, sizeof(msg), "Input file is not a supported PE64 image:\n%s\n\nPath:\n%s", pe_error, dll_u8);
+        show_error_box("auto_unpack_dump", msg);
+        free(orig_file);
+        free(dll_u8);
+        free(out_u8);
+        return 1;
+    }
+
+    if (build_missing_import_report(orig_file, orig_len, dll_path, missing_report, sizeof(missing_report)) > 0) {
+        char msg[4608];
+        log_line("One or more dependent DLLs could not be resolved before load.");
+        log_printf("Missing imports:\n%s", missing_report);
+        snprintf(msg, sizeof(msg),
+            "The target DLL depends on missing modules:\n\n%s\n\n"
+            "Put these DLLs in the same folder as the target, or install the required runtime.",
+            missing_report);
         show_error_box("auto_unpack_dump", msg);
         free(orig_file);
         free(dll_u8);
