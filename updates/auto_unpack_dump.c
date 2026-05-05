@@ -1,4 +1,5 @@
 #include <windows.h>
+#include <commdlg.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -92,6 +93,67 @@ static int build_default_paths(wchar_t **dll_path, wchar_t **out_pe_path, wchar_
 static int file_exists(const wchar_t *path) {
     DWORD attrs = GetFileAttributesW(path);
     return attrs != INVALID_FILE_ATTRIBUTES && !(attrs & FILE_ATTRIBUTE_DIRECTORY);
+}
+
+static wchar_t *dup_wstr(const wchar_t *src) {
+    size_t len = wcslen(src) + 1;
+    wchar_t *dst = (wchar_t *)calloc(len, sizeof(wchar_t));
+    if (!dst) {
+        return NULL;
+    }
+    memcpy(dst, src, len * sizeof(wchar_t));
+    return dst;
+}
+
+static int prompt_for_dll_path(wchar_t **dll_path, wchar_t **out_pe_path, wchar_t **log_path) {
+    OPENFILENAMEW ofn;
+    wchar_t selected[MAX_PATH] = {0};
+    wchar_t dir[MAX_PATH] = {0};
+    wchar_t *slash;
+    size_t base_len;
+    wchar_t *new_out = NULL;
+    wchar_t *new_log = NULL;
+    static const wchar_t filter[] = L"DLL Files\0*.dll\0All Files\0*.*\0\0";
+
+    ZeroMemory(&ofn, sizeof(ofn));
+    ofn.lStructSize = sizeof(ofn);
+    ofn.hwndOwner = NULL;
+    ofn.lpstrFilter = filter;
+    ofn.lpstrFile = selected;
+    ofn.nMaxFile = MAX_PATH;
+    ofn.lpstrTitle = L"Select DLL to load and dump";
+    ofn.Flags = OFN_FILEMUSTEXIST | OFN_PATHMUSTEXIST;
+
+    if (!GetOpenFileNameW(&ofn)) {
+        return 0;
+    }
+
+    wcsncpy(dir, selected, MAX_PATH - 1);
+    slash = wcsrchr(dir, L'\\');
+    if (!slash) {
+        return 0;
+    }
+    *slash = L'\0';
+    base_len = wcslen(dir);
+
+    new_out = (wchar_t *)calloc(base_len + 1 + wcslen(L"snowfall_unpacked_auto.dll") + 1, sizeof(wchar_t));
+    new_log = (wchar_t *)calloc(base_len + 1 + wcslen(L"auto_unpack_dump.log") + 1, sizeof(wchar_t));
+    if (!new_out || !new_log) {
+        free(new_out);
+        free(new_log);
+        return 0;
+    }
+
+    swprintf(new_out, base_len + 1 + wcslen(L"snowfall_unpacked_auto.dll") + 1, L"%s\\snowfall_unpacked_auto.dll", dir);
+    swprintf(new_log, base_len + 1 + wcslen(L"auto_unpack_dump.log") + 1, L"%s\\auto_unpack_dump.log", dir);
+
+    free(*dll_path);
+    free(*out_pe_path);
+    free(*log_path);
+    *dll_path = dup_wstr(selected);
+    *out_pe_path = new_out;
+    *log_path = new_log;
+    return *dll_path != NULL;
 }
 
 static int apply_cwd_fallback_if_needed(wchar_t **dll_path, wchar_t **out_pe_path, wchar_t **log_path) {
@@ -265,19 +327,31 @@ int main(int argc, char **argv) {
     log_printf("Wait(ms): %lu", (unsigned long)wait_ms);
 
     if (!file_exists(dll_path)) {
-        char msg[1024];
-        log_line("Input DLL was not found.");
-        snprintf(msg, sizeof(msg), "Input DLL was not found at:\n%s", dll_path_u8);
-        show_error_box("auto_unpack_dump", msg);
-        free(dll_path);
-        free(out_pe_path);
-        free(log_path);
+        log_line("Input DLL was not found at default path. Opening file picker.");
         free(dll_path_u8);
         free(out_pe_path_u8);
+        dll_path_u8 = NULL;
+        out_pe_path_u8 = NULL;
+        if (!prompt_for_dll_path(&dll_path, &out_pe_path, &log_path) ||
+            !wide_to_utf8(dll_path, &dll_path_u8) ||
+            !wide_to_utf8(out_pe_path, &out_pe_path_u8)) {
+            show_error_box("auto_unpack_dump", "Input DLL was not found and no DLL was selected.");
+            free(dll_path);
+            free(out_pe_path);
+            free(log_path);
+            if (g_logf) {
+                fclose(g_logf);
+            }
+            return 1;
+        }
         if (g_logf) {
             fclose(g_logf);
         }
-        return 1;
+        g_logf = _wfopen(log_path ? log_path : L"auto_unpack_dump.log", L"wb");
+        log_line("=== auto_unpack_dump start ===");
+        log_printf("Input DLL: %s", dll_path_u8);
+        log_printf("Output PE: %s", out_pe_path_u8);
+        log_printf("Wait(ms): %lu", (unsigned long)wait_ms);
     }
 
     uint8_t *orig_file = NULL;
