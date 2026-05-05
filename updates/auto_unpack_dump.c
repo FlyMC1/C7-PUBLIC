@@ -89,6 +89,58 @@ static int build_default_paths(wchar_t **dll_path, wchar_t **out_pe_path, wchar_
     return 1;
 }
 
+static int file_exists(const wchar_t *path) {
+    DWORD attrs = GetFileAttributesW(path);
+    return attrs != INVALID_FILE_ATTRIBUTES && !(attrs & FILE_ATTRIBUTE_DIRECTORY);
+}
+
+static int apply_cwd_fallback_if_needed(wchar_t **dll_path, wchar_t **out_pe_path, wchar_t **log_path) {
+    wchar_t cwd[MAX_PATH];
+    wchar_t *new_dll = NULL;
+    wchar_t *new_out = NULL;
+    wchar_t *new_log = NULL;
+    size_t base_len;
+
+    if (*dll_path && file_exists(*dll_path)) {
+        return 1;
+    }
+
+    DWORD n = GetCurrentDirectoryW(MAX_PATH, cwd);
+    if (n == 0 || n >= MAX_PATH) {
+        return 0;
+    }
+
+    base_len = wcslen(cwd);
+    new_dll = (wchar_t *)calloc(base_len + 1 + wcslen(L"snowfall.dll") + 1, sizeof(wchar_t));
+    new_out = (wchar_t *)calloc(base_len + 1 + wcslen(L"snowfall_unpacked_auto.dll") + 1, sizeof(wchar_t));
+    new_log = (wchar_t *)calloc(base_len + 1 + wcslen(L"auto_unpack_dump.log") + 1, sizeof(wchar_t));
+    if (!new_dll || !new_out || !new_log) {
+        free(new_dll);
+        free(new_out);
+        free(new_log);
+        return 0;
+    }
+
+    swprintf(new_dll, base_len + 1 + wcslen(L"snowfall.dll") + 1, L"%s\\snowfall.dll", cwd);
+    swprintf(new_out, base_len + 1 + wcslen(L"snowfall_unpacked_auto.dll") + 1, L"%s\\snowfall_unpacked_auto.dll", cwd);
+    swprintf(new_log, base_len + 1 + wcslen(L"auto_unpack_dump.log") + 1, L"%s\\auto_unpack_dump.log", cwd);
+
+    if (!file_exists(new_dll)) {
+        free(new_dll);
+        free(new_out);
+        free(new_log);
+        return 0;
+    }
+
+    free(*dll_path);
+    free(*out_pe_path);
+    free(*log_path);
+    *dll_path = new_dll;
+    *out_pe_path = new_out;
+    *log_path = new_log;
+    return 1;
+}
+
 static int read_file_all(const wchar_t *path, uint8_t **buf, size_t *len) {
     FILE *f = _wfopen(path, L"rb");
     if (!f) {
@@ -136,25 +188,25 @@ static int write_file_all(const wchar_t *path, const uint8_t *buf, size_t len) {
     return wrote == len;
 }
 
-static int is_valid_pe(const uint8_t *buf, size_t len) {
+static const char *validate_pe64(const uint8_t *buf, size_t len) {
     if (len < sizeof(IMAGE_DOS_HEADER)) {
-        return 0;
+        return "file is too small to contain a PE header";
     }
     const IMAGE_DOS_HEADER *dos = (const IMAGE_DOS_HEADER *)buf;
     if (dos->e_magic != IMAGE_DOS_SIGNATURE) {
-        return 0;
+        return "file does not start with an MZ header";
     }
     if (dos->e_lfanew <= 0 || (size_t)dos->e_lfanew + sizeof(IMAGE_NT_HEADERS64) > len) {
-        return 0;
+        return "PE header offset is invalid";
     }
     const IMAGE_NT_HEADERS64 *nt = (const IMAGE_NT_HEADERS64 *)(buf + dos->e_lfanew);
     if (nt->Signature != IMAGE_NT_SIGNATURE) {
-        return 0;
+        return "file does not contain a PE signature";
     }
     if (nt->OptionalHeader.Magic != IMAGE_NT_OPTIONAL_HDR64_MAGIC) {
-        return 0;
+        return "file is not a 64-bit PE image";
     }
-    return 1;
+    return NULL;
 }
 
 int main(int argc, char **argv) {
@@ -193,6 +245,7 @@ int main(int argc, char **argv) {
             show_error_box("auto_unpack_dump", "Failed to build default paths from EXE location.");
             return 1;
         }
+        apply_cwd_fallback_if_needed(&dll_path, &out_pe_path, &log_path);
     }
 
     if (!wide_to_utf8(dll_path, &dll_path_u8) || !wide_to_utf8(out_pe_path, &out_pe_path_u8)) {
@@ -211,21 +264,57 @@ int main(int argc, char **argv) {
     log_printf("Output PE: %s", out_pe_path_u8);
     log_printf("Wait(ms): %lu", (unsigned long)wait_ms);
 
-    uint8_t *orig_file = NULL;
-    size_t orig_len = 0;
-    if (!read_file_all(dll_path, &orig_file, &orig_len) || !is_valid_pe(orig_file, orig_len)) {
-        log_line("Failed to read or parse input DLL as PE64.");
-        show_error_box("auto_unpack_dump", "Failed to read or parse input DLL as PE64.");
+    if (!file_exists(dll_path)) {
+        char msg[1024];
+        log_line("Input DLL was not found.");
+        snprintf(msg, sizeof(msg), "Input DLL was not found at:\n%s", dll_path_u8);
+        show_error_box("auto_unpack_dump", msg);
         free(dll_path);
         free(out_pe_path);
         free(log_path);
         free(dll_path_u8);
         free(out_pe_path_u8);
-        free(orig_file);
         if (g_logf) {
             fclose(g_logf);
         }
         return 1;
+    }
+
+    uint8_t *orig_file = NULL;
+    size_t orig_len = 0;
+    if (!read_file_all(dll_path, &orig_file, &orig_len)) {
+        char msg[1024];
+        log_line("Failed to read input DLL from disk.");
+        snprintf(msg, sizeof(msg), "Failed to read input DLL from disk:\n%s", dll_path_u8);
+        show_error_box("auto_unpack_dump", msg);
+        free(dll_path);
+        free(out_pe_path);
+        free(log_path);
+        free(dll_path_u8);
+        free(out_pe_path_u8);
+        if (g_logf) {
+            fclose(g_logf);
+        }
+        return 1;
+    }
+    {
+        const char *pe_error = validate_pe64(orig_file, orig_len);
+        if (pe_error) {
+            char msg[1024];
+            log_printf("Input file is not a supported PE64 image: %s", pe_error);
+            snprintf(msg, sizeof(msg), "Input file is not a supported PE64 image:\n%s\n\nPath:\n%s", pe_error, dll_path_u8);
+            show_error_box("auto_unpack_dump", msg);
+            free(dll_path);
+            free(out_pe_path);
+            free(log_path);
+            free(dll_path_u8);
+            free(out_pe_path_u8);
+            free(orig_file);
+            if (g_logf) {
+                fclose(g_logf);
+            }
+            return 1;
+        }
     }
 
     HMODULE mod = LoadLibraryW(dll_path);
