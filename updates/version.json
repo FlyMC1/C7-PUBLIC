@@ -1,15 +1,14 @@
 {
-  "version": "2.0.26",
+  "version": "2.0.27",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "c7c83b70e51f343fac8015efcf99963c0239d5d27aa4594bdd436952db65f4fb",
-  "injector_sha256": "889337fa61dcdf65b8f2f925198e5f627b4fc9fc7eb1a491e5c4a182f8ba0427",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.26",
+  "dll_sha256": "32c689b87cf73ddeeca1a4d9a0cc51322dcc9ee0fc7860d4eac901c7458bee3d",
+  "injector_sha256": "3239c44e156de7613beff8d1538d448f55e48e0a3f560ff80c1c0179910ccc4a",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.27",
   "latest_features": [
-  "Added new Player module ShulkMod for one-shot shulker auto-craft automation",
-  "ShulkMod starts when inventory is opened, runs first auto-craft recipe, then takes output each cycle",
-  "Added configurable ShulkMod settings for craft speed and craft cycles",
-  "After cycle completion ShulkMod auto-enables NoPacket, ejects all shulker boxes, and restores NoPacket",
-  "ShulkMod runs once per activation and auto-disables after finishing"
+  "Added cb102b78-feba-11ef-9ad8-806e6f6e6963 to the level-3 admin allowlist",
+  "Expanded the baked policy vip/admin list so the new HWID gets immediate elevated access",
+  "ShulkMod is now included in the vip/admin module access table so it appears in the Player UI",
+  "Policy header was regenerated for the new access rules before cutting the release"
 ]
 }
