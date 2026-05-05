@@ -201,6 +201,26 @@ static int prompt_for_dll_path(wchar_t **dll_path, wchar_t **out_pe_path, wchar_
     return *dll_path != NULL;
 }
 
+static int get_parent_dir(const wchar_t *path, wchar_t *dir, size_t dir_len) {
+    const wchar_t *slash;
+    size_t copy_len;
+
+    if (!path || !dir || dir_len == 0) {
+        return 0;
+    }
+    slash = wcsrchr(path, L'\\');
+    if (!slash) {
+        return 0;
+    }
+    copy_len = (size_t)(slash - path);
+    if (copy_len + 1 > dir_len) {
+        return 0;
+    }
+    memcpy(dir, path, copy_len * sizeof(wchar_t));
+    dir[copy_len] = L'\0';
+    return 1;
+}
+
 static int read_file_all(const wchar_t *path, uint8_t **buf, size_t *len) {
     FILE *f = _wfopen(path, L"rb");
     long size;
@@ -395,7 +415,14 @@ static int dump_remote_module(HANDLE process, uintptr_t remote_base, const uint8
 
 static int run_worker(const wchar_t *dll_path, DWORD hold_ms) {
     HMODULE mod;
-    mod = LoadLibraryW(dll_path);
+    wchar_t dll_dir[MAX_PATH];
+
+    if (get_parent_dir(dll_path, dll_dir, MAX_PATH)) {
+        SetDllDirectoryW(dll_dir);
+        SetCurrentDirectoryW(dll_dir);
+    }
+
+    mod = LoadLibraryExW(dll_path, NULL, LOAD_WITH_ALTERED_SEARCH_PATH);
     if (!mod) {
         return (int)GetLastError();
     }
@@ -493,11 +520,16 @@ static int run_controller(const wchar_t *exe_path, const wchar_t *dll_path, cons
     }
 
     if (remote_base == 0) {
-        char msg[256];
+        char msg[512];
         GetExitCodeProcess(process, &exit_code);
         if (exit_code == STILL_ACTIVE) {
             log_line("Worker never exposed the DLL as a loaded module.");
             snprintf(msg, sizeof(msg), "Worker did not load the DLL within %lu ms", (unsigned long)(wait_ms + 5000));
+        } else if (exit_code == 126) {
+            log_line("Worker failed with error 126 while loading the DLL.");
+            snprintf(msg, sizeof(msg),
+                "Worker failed with error 126. A dependent DLL was likely not found.\n\n"
+                "Place the target DLL and its dependencies in the same folder, then retry.");
         } else {
             log_printf("Worker exited before module enumeration, exit code %lu", (unsigned long)exit_code);
             snprintf(msg, sizeof(msg), "Worker exited before dump. Exit code: %lu", (unsigned long)exit_code);
