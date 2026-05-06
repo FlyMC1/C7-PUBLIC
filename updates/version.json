@@ -1,14 +1,14 @@
 {
-  "version": "2.0.27",
+  "version": "2.0.28",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "32c689b87cf73ddeeca1a4d9a0cc51322dcc9ee0fc7860d4eac901c7458bee3d",
-  "injector_sha256": "3239c44e156de7613beff8d1538d448f55e48e0a3f560ff80c1c0179910ccc4a",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.27",
+  "dll_sha256": "a8b2e46112aa03daca60bd71852270b1a52c2da9c407f7449d71a0dff9d6edea",
+  "injector_sha256": "6cab2263dbd3bef838ba22c13be3ac17857e39ee2ca244341e3084db0e6e34ad",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.28",
   "latest_features": [
-  "Added cb102b78-feba-11ef-9ad8-806e6f6e6963 to the level-3 admin allowlist",
-  "Expanded the baked policy vip/admin list so the new HWID gets immediate elevated access",
-  "ShulkMod is now included in the vip/admin module access table so it appears in the Player UI",
-  "Policy header was regenerated for the new access rules before cutting the release"
+  "Injector now starts the injection flow automatically after update check instead of waiting for a manual launch click",
+  "c7.mp4 now plays as a fullscreen loading splash for 4 seconds at injection time and fades back to Minecraft",
+  "Client initialization no longer stalls on main menu auth; whitelist verification is deferred until a world or server is joined",
+  "Title screen branding now renders CIRCLE7 with the live client version under the main logo"
 ]
 }
