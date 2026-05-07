@@ -1,15 +1,15 @@
 {
-  "version": "2.0.32",
+  "version": "2.0.33",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "41cfdd801e8e94b32ce9295027a19939ab2ee82231b217a887f994eda591d577",
-  "injector_sha256": "ba861b31dd0332be15ce728cb9fe8e61b6b1b98c09e48caad5d54dd8b52a3ce6",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.32",
+  "dll_sha256": "4bc93b1174558a4ac1ce13f655be33f1439c0bd46167800c2139512dc902a4a6",
+  "injector_sha256": "4b4f2ae185f6c980c794476d037e4cd6f472fe58078845e661e54e812ba5a35d",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.33",
   "latest_features": [
-  "ClickGUI now hides World Render and HybridPvP unless the current account has admin access, and AutoPVP is admin-only",
-  "World Render preview now rasterizes captured surface columns into a buffered image instead of per-block rectangles",
-  "Minimap was rebuilt into a simpler pixel terrain view with chest pins and an enchanted emerald border",
-  "ShulkMod replaces SmithingSpam with an admin-only inventory craft, shift-take, and NoPacket eject flow",
-  "Main menu CIRCLE7 branding now renders at a larger D2D scale for clearer title and version text"
+  "Injector splash now uses a branded black C7 loader with a timed progress bar instead of the old video intro",
+  "World Render now previews and exports a true 3D heightfield view with terrain lighting, fog, pitch, and colored light controls",
+  "Minimap now supports 4x larger size, 2x higher resolution, configurable terrain depth, and chest icon scaling",
+  "Added Storage Radar under World for nearby chest, trapped chest, ender chest, barrel, hopper, and shulker box counts",
+  "Main menu branding now draws the centered CIRCLE7 title in the game UI render path, and ShulkMod again unlocks for admin via SmithingSpam alias access"
 ]
 }
