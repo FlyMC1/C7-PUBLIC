@@ -1,15 +1,15 @@
 {
-  "version": "2.0.31",
+  "version": "2.0.32",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "4184badb7b64eaf4d71b38ec47472f7e702cad6e23447e8872261e22b0f6ee8d",
-  "injector_sha256": "c89893f459f801d2ef3badc98c2083c2d7ef15bc8f3170a6873dcf7a3b3bc28c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.31",
+  "dll_sha256": "41cfdd801e8e94b32ce9295027a19939ab2ee82231b217a887f994eda591d577",
+  "injector_sha256": "ba861b31dd0332be15ce728cb9fe8e61b6b1b98c09e48caad5d54dd8b52a3ce6",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.32",
   "latest_features": [
-  "Fixed elevated-module visibility by matching policy access names against ClickGUI display aliases",
-  "Packet Logger now appears as its own module and the top-left watermark only renders in a loaded world",
-  "Main menu CIRCLE7 branding now renders through the smoother D2D overlay with live version text",
-  "Injector splash now falls back to an embedded c7.mp4 so the fullscreen intro still plays without a sidecar file",
-  "Shulker Preview now prioritizes hovered or held shulkers and uses a cleaner overlay panel"
+  "ClickGUI now hides World Render and HybridPvP unless the current account has admin access, and AutoPVP is admin-only",
+  "World Render preview now rasterizes captured surface columns into a buffered image instead of per-block rectangles",
+  "Minimap was rebuilt into a simpler pixel terrain view with chest pins and an enchanted emerald border",
+  "ShulkMod replaces SmithingSpam with an admin-only inventory craft, shift-take, and NoPacket eject flow",
+  "Main menu CIRCLE7 branding now renders at a larger D2D scale for clearer title and version text"
 ]
 }
