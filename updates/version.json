@@ -1,15 +1,15 @@
 {
-  "version": "2.0.33",
+  "version": "2.0.34",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "4bc93b1174558a4ac1ce13f655be33f1439c0bd46167800c2139512dc902a4a6",
-  "injector_sha256": "4b4f2ae185f6c980c794476d037e4cd6f472fe58078845e661e54e812ba5a35d",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.33",
+  "dll_sha256": "390e6da4bd259a45e5f169a6ee3d4d41df7e957eb36f65612db5b507993c805f",
+  "injector_sha256": "8faf3a5d89f720d42ba1fbd2347b04a4b0dcd3b2f081d0aa4f902dd4af799545",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.34",
   "latest_features": [
-  "Injector splash now uses a branded black C7 loader with a timed progress bar instead of the old video intro",
-  "World Render now previews and exports a true 3D heightfield view with terrain lighting, fog, pitch, and colored light controls",
-  "Minimap now supports 4x larger size, 2x higher resolution, configurable terrain depth, and chest icon scaling",
-  "Added Storage Radar under World for nearby chest, trapped chest, ender chest, barrel, hopper, and shulker box counts",
-  "Main menu branding now draws the centered CIRCLE7 title in the game UI render path, and ShulkMod again unlocks for admin via SmithingSpam alias access"
+  "Injector now has manual localhost proxy controls and can start the world-download proxy before injection",
+  "Minimap now uses a cached stone border, smaller border sizing, and cached terrain shading for much better high-resolution performance",
+  "Storage Radar is visible again across role tiers and Tracer is now a standalone Render module instead of an ESP sub-setting",
+  "World Render now samples terrain more smoothly, Scaffold adds Allow Jump, and ShulkerPreview uses cleaner row-aligned live container windows",
+  "ShulkMod now follows the new click-style craft output flow, and release DLL builds use stronger standard hardening flags"
 ]
 }
