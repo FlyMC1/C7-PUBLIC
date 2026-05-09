@@ -1,15 +1,14 @@
 {
-  "version": "2.0.34",
+  "version": "2.0.35",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "390e6da4bd259a45e5f169a6ee3d4d41df7e957eb36f65612db5b507993c805f",
-  "injector_sha256": "8faf3a5d89f720d42ba1fbd2347b04a4b0dcd3b2f081d0aa4f902dd4af799545",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.34",
+  "dll_sha256": "75464d1f253eb091a3067bb0e5fcf793ea30e67a24d3f51785668d0e4a8b8268",
+  "injector_sha256": "ff0cca4cf71fdefc8eb5110e881249eba4a9b7aede6fcb5af091f550aedae72d",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.35",
   "latest_features": [
-  "Injector now has manual localhost proxy controls and can start the world-download proxy before injection",
-  "Minimap now uses a cached stone border, smaller border sizing, and cached terrain shading for much better high-resolution performance",
-  "Storage Radar is visible again across role tiers and Tracer is now a standalone Render module instead of an ESP sub-setting",
-  "World Render now samples terrain more smoothly, Scaffold adds Allow Jump, and ShulkerPreview uses cleaner row-aligned live container windows",
-  "ShulkMod now follows the new click-style craft output flow, and release DLL builds use stronger standard hardening flags"
+  "Hotfix: release DLL builds no longer enable Control Flow Guard, which was causing immediate post-inject crashes for some clients",
+  "Injector launcher spacing was cleaned up so the proxy hint and status text no longer overlap the input controls",
+  "Private releases now attach world_download_proxy_target.txt just like the mirrored public release assets",
+  "The download webhook follow-up no longer fails the whole release when the GitHub token cannot read or update Actions variables"
 ]
 }
