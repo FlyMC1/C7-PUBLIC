@@ -1,0 +1,5 @@
+# WorldDownload proxy target
+# Put the upstream Bedrock server or realm target on the first non-comment line.
+# Examples:
+# play.example.net:19132
+# realm:Example Realm Name
