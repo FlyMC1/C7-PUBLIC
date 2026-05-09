@@ -1,14 +1,14 @@
 {
-  "version": "2.0.35",
+  "version": "2.0.36",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "75464d1f253eb091a3067bb0e5fcf793ea30e67a24d3f51785668d0e4a8b8268",
-  "injector_sha256": "ff0cca4cf71fdefc8eb5110e881249eba4a9b7aede6fcb5af091f550aedae72d",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.35",
-  "latest_features": [
-  "Hotfix: release DLL builds no longer enable Control Flow Guard, which was causing immediate post-inject crashes for some clients",
-  "Injector launcher spacing was cleaned up so the proxy hint and status text no longer overlap the input controls",
-  "Private releases now attach world_download_proxy_target.txt just like the mirrored public release assets",
-  "The download webhook follow-up no longer fails the whole release when the GitHub token cannot read or update Actions variables"
+  "dll_sha256": "7f50da3509eedb6647035a60d781cdd6702d673b79c7b8ea811f016c22070674",
+  "injector_sha256": "96bd9948daaaf517f70d8cb5ed474bd60ab2d0034b96a6289998d3914ddc35cc",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.36",
+  "latest_features": [ 
+  "Injector now downloads C7-WorldProxy.exe into AppData automatically, so bedrocktool no longer needs to sit next to the injector",
+  "Proxy helper downloads are cached under the Minecraft AppData C7-Client folder and refreshed against the current release version when needed",
+  "Private and public release pipelines now publish C7-WorldProxy.exe alongside the injector, DLL, version.json, and world proxy target template",
+  "The proxy helper asset is pinned to the upstream bedrock-tool/bedrocktool Windows build so releases stay reproducible"
 ]
 }
