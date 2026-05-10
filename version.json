@@ -1,14 +1,14 @@
 {
-  "version": "2.0.36",
-  "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll",
+  "version": "2.0.38",
+  "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "7f50da3509eedb6647035a60d781cdd6702d673b79c7b8ea811f016c22070674",
-  "injector_sha256": "96bd9948daaaf517f70d8cb5ed474bd60ab2d0034b96a6289998d3914ddc35cc",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.36",
+  "dll_sha256": "ceb1fbf143be2b0c79a5a2c7bebe58368bfe17bdec6dbd76b3d724cdedd05d12",
+  "injector_sha256": "ccda91903eeb03f7d5a9800804b4c050ae064c90713624bf185666fcc97b4fb5",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.38",
   "latest_features": [ 
-  "Injector now downloads C7-WorldProxy.exe into AppData automatically, so bedrocktool no longer needs to sit next to the injector",
-  "Proxy helper downloads are cached under the Minecraft AppData C7-Client folder and refreshed against the current release version when needed",
-  "Private and public release pipelines now publish C7-WorldProxy.exe alongside the injector, DLL, version.json, and world proxy target template",
-  "The proxy helper asset is pinned to the upstream bedrock-tool/bedrocktool Windows build so releases stay reproducible"
+  "Public updates now publish an encrypted C7.dll.pkg payload, and the injector decrypts it locally before injecting so the public repo no longer exposes a directly usable DLL",
+  "The injector keeps validating the decrypted C7.dll against the manifest SHA-256 before injection, so the existing integrity check still protects the runtime payload",
+  "Public release mirroring now ships C7.dll.pkg instead of C7.dll while keeping the injector and version manifest on the public repo update path",
+  "First-run proxy helper downloads now create the AppData Tools cache directory before writing C7-WorldProxy.exe, fixing clean-machine helper bootstrap failures"
 ]
 }
