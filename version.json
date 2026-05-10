@@ -1,14 +1,14 @@
 {
-  "version": "2.0.40",
+  "version": "2.0.41",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "237e1555131ccdf8792396ec40e96ea56d294f17174d74106b9f62015d19b996",
-  "injector_sha256": "fe814584bda5c7aabc27ffdedf2b29571325fbf341e4f71c2c416a58d01efe3f",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.40",
+  "dll_sha256": "5f08b32a2d023015f718550006ffc28e8734671b0412e9aa399f9a28428c9768",
+  "injector_sha256": "4401a5701bdff93a640ab40bc85dda560a8b4f28300e058c4d4e72f35c789a55",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.41",
   "latest_features": [ 
-  "Fixes the Windows release build regression that blocked v2.0.39 by correcting the ShulkMod2 GUI size lookup and Minimap rounded-rect helper declaration",
-  "Minimap rendering now has stronger relief shading, a configurable Nether slice view, and cleaner chest/player markers for easier Bedrock terrain reads",
-  "Added the new admin-only ShulkMod2 module with craft-packet burst controls, recipe probing, and an emergency on-screen kill button",
-  "Fixed level-3 admin access for AutoPVP, ShulkMod, and ShulkMod2 by mirroring those modules into the runtime vip access path used by ClickGUI"
+  "Minimap pins now stay north-up with the map instead of rotating around the player yaw, so the map and markers hold a fixed orientation",
+  "ShulkMod2 now inherits the same access aliases as ShulkMod and SmithingSpam so stale policy naming cannot hide it from admin and vip users",
+  "The injector now honors C7_WORLD_PROXY_EXE before the managed helper cache so a custom world proxy build can override the pinned helper cleanly",
+  "Minimap rendering still keeps the stronger relief shading, configurable Nether slice view, and cleaner chest and player markers introduced in the previous release"
 ]
 }
