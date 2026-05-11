@@ -1,14 +1,14 @@
 {
-  "version": "2.0.43",
+  "version": "2.0.44",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "0c151a0c29c193707068143f86375cd928dca18542cac28640ab627b18823cfb",
-  "injector_sha256": "779c03c25d36b9f1f4df273c36ef64155568181cd8285c32cca4970adfc01c77",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.43",
+  "dll_sha256": "570cc64823d41de631c4f00cdd67a681a516b779764fc894ba50a9e518131bb0",
+  "injector_sha256": "8ec8dff6a601e5f866d47f258ac87b552d8fa5840402a5ad0d29e17f9adc888a",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.44",
   "latest_features": [ 
-  "Adds the new admin-only SchemBuild module that loads the latest .schem or .schematic from the AutoBuild folder and renders it in-world as movable ghost blocks anchored to a nearby armor stand",
-  "SchemBuild supports configurable ghost opacity plus layer-up and layer-down keybinds so you can step through one horizontal layer at a time or return to a full-build preview",
-  "Access control now uses three effective module tiers: public, whitelist, and admin, so admin-only modules no longer leak through the old merged vip/admin policy path",
-  "The client still accepts legacy policy keys like normal and vip as compatibility aliases, but the checked-in policy now emits only public, whitelist, and admin"
+  "Fixes a runtime policy downgrade bug where stale remote access-policy revisions could override the newer policy embedded in the DLL and hide modules that should stay visible",
+  "The client now ignores file-based or remote policy payloads when their revision is older than the active embedded policy revision",
+  "Admin and public-visible modules like SchemBuild, Storage Radar, and Tracer no longer disappear just because the fallback policy endpoint is lagging behind the shipped build",
+  "This hotfix keeps the existing remote policy sync path for newer policy revisions while preventing older schema snapshots from rolling module access backward"
 ]
 }
