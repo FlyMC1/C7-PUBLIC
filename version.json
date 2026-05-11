@@ -1,14 +1,14 @@
 {
-  "version": "2.0.41",
+  "version": "2.0.42",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5f08b32a2d023015f718550006ffc28e8734671b0412e9aa399f9a28428c9768",
-  "injector_sha256": "4401a5701bdff93a640ab40bc85dda560a8b4f28300e058c4d4e72f35c789a55",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.41",
+  "dll_sha256": "876a2ac81a284d70b5380cc283ba72df8522c7b5ec3eef44434c1779b43f8f86",
+  "injector_sha256": "5fe4da84ce1aae034c3312c32f55476d2d91426cfe421047c763127aefa2e66d",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.42",
   "latest_features": [ 
-  "Minimap pins now stay north-up with the map instead of rotating around the player yaw, so the map and markers hold a fixed orientation",
-  "ShulkMod2 now inherits the same access aliases as ShulkMod and SmithingSpam so stale policy naming cannot hide it from admin and vip users",
-  "The injector now honors C7_WORLD_PROXY_EXE before the managed helper cache so a custom world proxy build can override the pinned helper cleanly",
-  "Minimap rendering still keeps the stronger relief shading, configurable Nether slice view, and cleaner chest and player markers introduced in the previous release"
+  "The injector now supports C7_WORLD_PROXY_URL and world_proxy_helper_url.txt so older Bedrock clients can pin a legacy proxy-helper download instead of being forced onto the latest incompatible helper",
+  "The proxy helper URL override is cached by source URL, so repeated launches keep the pinned helper until you change the override instead of redownloading every time",
+  "The injector still honors C7_WORLD_PROXY_EXE before the managed helper cache for fully local custom helper builds",
+  "Minimap pins remain north-up and ShulkMod2 keeps the admin and vip visibility fallback introduced in the previous release"
 ]
 }
