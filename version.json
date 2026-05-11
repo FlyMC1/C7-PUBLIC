@@ -1,14 +1,14 @@
 {
-  "version": "2.0.42",
+  "version": "2.0.43",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "876a2ac81a284d70b5380cc283ba72df8522c7b5ec3eef44434c1779b43f8f86",
-  "injector_sha256": "5fe4da84ce1aae034c3312c32f55476d2d91426cfe421047c763127aefa2e66d",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.42",
+  "dll_sha256": "0c151a0c29c193707068143f86375cd928dca18542cac28640ab627b18823cfb",
+  "injector_sha256": "779c03c25d36b9f1f4df273c36ef64155568181cd8285c32cca4970adfc01c77",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.43",
   "latest_features": [ 
-  "The injector now supports C7_WORLD_PROXY_URL and world_proxy_helper_url.txt so older Bedrock clients can pin a legacy proxy-helper download instead of being forced onto the latest incompatible helper",
-  "The proxy helper URL override is cached by source URL, so repeated launches keep the pinned helper until you change the override instead of redownloading every time",
-  "The injector still honors C7_WORLD_PROXY_EXE before the managed helper cache for fully local custom helper builds",
-  "Minimap pins remain north-up and ShulkMod2 keeps the admin and vip visibility fallback introduced in the previous release"
+  "Adds the new admin-only SchemBuild module that loads the latest .schem or .schematic from the AutoBuild folder and renders it in-world as movable ghost blocks anchored to a nearby armor stand",
+  "SchemBuild supports configurable ghost opacity plus layer-up and layer-down keybinds so you can step through one horizontal layer at a time or return to a full-build preview",
+  "Access control now uses three effective module tiers: public, whitelist, and admin, so admin-only modules no longer leak through the old merged vip/admin policy path",
+  "The client still accepts legacy policy keys like normal and vip as compatibility aliases, but the checked-in policy now emits only public, whitelist, and admin"
 ]
 }
