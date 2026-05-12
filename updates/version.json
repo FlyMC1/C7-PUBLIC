@@ -1,14 +1,13 @@
 {
-  "version": "2.0.45",
+  "version": "2.0.46",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ad6a3eb80243620f97f6d520bcfc48c3393afed25da8ec5c57ffedc0769070e2",
-  "injector_sha256": "d636b005de7939a013bda0bec3cac952633eb7cd4973f3e27c9208688c6fb162",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.45",
+  "dll_sha256": "528843871912883338f89f4bb1aae0c3f48475ce8f99e3721b9c99564fdd90c7",
+  "injector_sha256": "e8399e79dbace1c1a137176dcba39ccae54557637cbc188cf166db7b5cf79fca",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.46",
   "latest_features": [ 
-  "SchemBuild now supports full-schematic preview mode, wrapped layer stepping, injector-relative AutoBuild loading, layer-only scaffold placement, and a report hotkey that sends the current layer's remaining block list to chat",
-  "Minimap markers were redesigned with thinner clustered storage icons for chests, trapped chests, ender chests, barrels, hoppers, and shulkers, plus a sharper player-head marker with a yaw-facing center arrow",
-  "Tracer can now optionally highlight traced dropped items with the same color as the tracer line, while Storage Radar and Minimap overlays were cleaned up to remove extra header and settings text",
-  "WorldDownload was removed from the module list only, leaving the existing backend capture code untouched"
+  "The bundled C7-WorldProxy helper is now pinned to the official bedrocktool r1.39.1 build, matching Minecraft Bedrock 1.21.2 and protocol 686 instead of newer helper builds that rejected older clients",
+  "Admin access was expanded for HWID 6528887e-e4c5-11f0-8432-806e6f6e6963 in both the checked-in access policy and the hardcoded DLL fallback list",
+  "The access policy revision was bumped so newer admin grants propagate cleanly without being ignored by the stale-policy guard"
 ]
 }
