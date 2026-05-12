@@ -1,14 +1,14 @@
 {
-  "version": "2.0.44",
+  "version": "2.0.45",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "570cc64823d41de631c4f00cdd67a681a516b779764fc894ba50a9e518131bb0",
-  "injector_sha256": "8ec8dff6a601e5f866d47f258ac87b552d8fa5840402a5ad0d29e17f9adc888a",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.44",
+  "dll_sha256": "ad6a3eb80243620f97f6d520bcfc48c3393afed25da8ec5c57ffedc0769070e2",
+  "injector_sha256": "d636b005de7939a013bda0bec3cac952633eb7cd4973f3e27c9208688c6fb162",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.45",
   "latest_features": [ 
-  "Fixes a runtime policy downgrade bug where stale remote access-policy revisions could override the newer policy embedded in the DLL and hide modules that should stay visible",
-  "The client now ignores file-based or remote policy payloads when their revision is older than the active embedded policy revision",
-  "Admin and public-visible modules like SchemBuild, Storage Radar, and Tracer no longer disappear just because the fallback policy endpoint is lagging behind the shipped build",
-  "This hotfix keeps the existing remote policy sync path for newer policy revisions while preventing older schema snapshots from rolling module access backward"
+  "SchemBuild now supports full-schematic preview mode, wrapped layer stepping, injector-relative AutoBuild loading, layer-only scaffold placement, and a report hotkey that sends the current layer's remaining block list to chat",
+  "Minimap markers were redesigned with thinner clustered storage icons for chests, trapped chests, ender chests, barrels, hoppers, and shulkers, plus a sharper player-head marker with a yaw-facing center arrow",
+  "Tracer can now optionally highlight traced dropped items with the same color as the tracer line, while Storage Radar and Minimap overlays were cleaned up to remove extra header and settings text",
+  "WorldDownload was removed from the module list only, leaving the existing backend capture code untouched"
 ]
 }
