@@ -1,13 +1,13 @@
 {
-  "version": "2.0.46",
+  "version": "2.0.47",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "528843871912883338f89f4bb1aae0c3f48475ce8f99e3721b9c99564fdd90c7",
-  "injector_sha256": "e8399e79dbace1c1a137176dcba39ccae54557637cbc188cf166db7b5cf79fca",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.46",
+  "dll_sha256": "03a5a32bdf9350f0238d51ebb719c0dbe6b8ede32d22139525ee1a2b3e43c31d",
+  "injector_sha256": "7d281e2e66d01c94d82b34a3415d646516416e5a9d9f5e16fa71d7b21f96f2b7",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.47",
   "latest_features": [ 
-  "The bundled C7-WorldProxy helper is now pinned to the official bedrocktool r1.39.1 build, matching Minecraft Bedrock 1.21.2 and protocol 686 instead of newer helper builds that rejected older clients",
-  "Admin access was expanded for HWID 6528887e-e4c5-11f0-8432-806e6f6e6963 in both the checked-in access policy and the hardcoded DLL fallback list",
-  "The access policy revision was bumped so newer admin grants propagate cleanly without being ignored by the stale-policy guard"
+  "Added ShulkDub as a new admin-only World module that reuses the shulker craft flow with a configurable Value setting from 1 to 64",
+  "ShulkDub now renders a larger right-side pseudo-3D panel with EJECT and KILL controls while your inventory is open",
+  "The admin policy revision was bumped again so the new ShulkDub grant propagates cleanly without being overwritten by stale cached policy data"
 ]
 }
