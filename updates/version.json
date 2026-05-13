@@ -1,13 +1,13 @@
 {
-  "version": "2.0.48",
+  "version": "2.0.49",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "45c8fb4b56359404d4bdf0b91fa508019b96f8f7d91ec8dad0e42c3a4708ae84",
-  "injector_sha256": "f2ef9160615c900092d734e2f98d78a2a6692de75a185ad1a49bd721fdbb6b2a",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.48",
+  "dll_sha256": "06c1c1eb33322cc73158ece11e55ceb0d362a3d1a9fdc4ce4e55c6c8ec88f535",
+  "injector_sha256": "1f033d9f1f7446facca03c93ad1a7b60aa282cc9221f2dc6fc69932686b1f1d6",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.49",
   "latest_features": [ 
-  "SchemBuild now has a configurable player-anchor fallback and more tolerant armor-stand detection so ghost blocks keep rendering even when Nukkit-style anchor lookup is flaky",
-  "ShulkDub no longer runs a crash-prone always-on craft loop on enable and now supports Auto Open, Inventory Entry, and Background trigger modes",
-  "ShulkDub's right-side inventory panel now includes a third DUB button for manually firing the shulker craft packet alongside EJECT and KILL"
+  "ShulkDub's imitate mode now sends a legacy inventory transaction flow that lines up with Nukkit's crafting path instead of only emitting a modern ItemStackRequest craft packet",
+  "ShulkDub now stages the shulker and dye as real legacy crafting ingredients and derives the dyed output stack from the selected dye before sending the transaction",
+  "ShulkDub now reserves an empty inventory slot for the imitated craft result so the DUB action no longer falls back to overwriting one of the source slots"
 ]
 }
