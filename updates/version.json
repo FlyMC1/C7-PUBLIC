@@ -1,13 +1,13 @@
 {
-  "version": "2.0.50",
+  "version": "2.0.51",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "87497b4ef6c9ea5a21bb8a8ad18863083d9735317f483837809fc5f65627a05a",
-  "injector_sha256": "015dbf7ca335ce4fa9a9fd0d2662cd85e17c500d37bc737d4757e9d5dd73685c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.50",
+  "dll_sha256": "a4e454f7749befe519f78e535e321c888e908770788ac9c1faf74ec5067e2b32",
+  "injector_sha256": "3fb9c1a37b57fdcc0361c4eb90fdf0880477102985048e5d6c314450681e5e6f",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.51",
   "latest_features": [ 
-  "ShulkDub now targets Nukkit's legacy InventoryTransaction crafting path directly instead of relying on ItemStackRequest actions the server never handles",
-  "Imitate Transaction now repeats one-count legacy craft-result and destination-slot actions to target Nukkit's post-merge overstack bug for dyed shulker output",
-  "ShulkDub's non-imitate path now also uses a single legacy craft transaction so both modes stay on the same server-validated packet family"
+  "Added admin access for HWID 2235535a-6567-11ee-a33d-806e6f6e6963 in the central access policy",
+  "Regenerated embedded fallback policy so in-DLL access enforcement matches the latest admin whitelist",
+  "Release metadata now reflects the admin-whitelist update for immediate rollout"
 ]
 }
