@@ -1,13 +1,13 @@
 {
-  "version": "2.0.51",
+  "version": "2.0.52",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "a4e454f7749befe519f78e535e321c888e908770788ac9c1faf74ec5067e2b32",
-  "injector_sha256": "3fb9c1a37b57fdcc0361c4eb90fdf0880477102985048e5d6c314450681e5e6f",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.51",
+  "dll_sha256": "435af8753cf8fdca99a40781584ddf845c0ebaf18889977da1dae9ae4dda2ad6",
+  "injector_sha256": "d93eb2a950add76621f99eccc616ae34f86f9a9b639ef7b47e2f079377a5bcd0",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.52",
   "latest_features": [ 
-  "Added admin access for HWID 2235535a-6567-11ee-a33d-806e6f6e6963 in the central access policy",
-  "Regenerated embedded fallback policy so in-DLL access enforcement matches the latest admin whitelist",
-  "Release metadata now reflects the admin-whitelist update for immediate rollout"
+  "Prepared release v2.0.52 from current main with no gameplay/module behavior changes",
+  "Keeps the v2.0.51 admin-whitelist policy update and embedded fallback policy alignment",
+  "Refreshes release metadata so workflow-generated version.json points to the new release tag"
 ]
 }
