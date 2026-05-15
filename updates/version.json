@@ -1,13 +1,13 @@
 {
-  "version": "2.0.52",
+  "version": "2.0.54",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "435af8753cf8fdca99a40781584ddf845c0ebaf18889977da1dae9ae4dda2ad6",
-  "injector_sha256": "d93eb2a950add76621f99eccc616ae34f86f9a9b639ef7b47e2f079377a5bcd0",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.52",
+  "dll_sha256": "1e5fc1872ce167ef5cf014c0bc87ebc23777032a30cae25af320d438fbf1b3c8",
+  "injector_sha256": "11f978d9f8b4b95a75efd576244196c90f6b1a0ae6f8c47bcfd16a285b7db3a3",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.54",
   "latest_features": [ 
-  "Prepared release v2.0.52 from current main with no gameplay/module behavior changes",
-  "Keeps the v2.0.51 admin-whitelist policy update and embedded fallback policy alignment",
-  "Refreshes release metadata so workflow-generated version.json points to the new release tag"
+  "RMod replay viewer can now export loaded sessions as MP4 or as a staged frame sequence under each replay bundle",
+  "Replay export now uses configurable width, height, and fps settings directly from the RMod module settings",
+  "The first RMod release slice now covers recording, browser flow, playback controls, active block scanning, and export"
 ]
 }
