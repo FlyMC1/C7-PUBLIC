@@ -1,13 +1,13 @@
 {
-  "version": "2.0.54",
+  "version": "2.0.56",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "1e5fc1872ce167ef5cf014c0bc87ebc23777032a30cae25af320d438fbf1b3c8",
-  "injector_sha256": "11f978d9f8b4b95a75efd576244196c90f6b1a0ae6f8c47bcfd16a285b7db3a3",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.54",
+  "dll_sha256": "83823fb82c0d07a1a2f2acb46979bed919067dd68d41b366cdb94d102be6d758",
+  "injector_sha256": "179eb8b5b19ae3cd0e6a0f309f6cab7963f9b8341c72cd73af47dfd35d230551",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.56",
   "latest_features": [ 
-  "RMod replay viewer can now export loaded sessions as MP4 or as a staged frame sequence under each replay bundle",
-  "Replay export now uses configurable width, height, and fps settings directly from the RMod module settings",
-  "The first RMod release slice now covers recording, browser flow, playback controls, active block scanning, and export"
+  "ClickGUI now reuses the shipped background image for its centered overlay art and ships with cleaner metallic panel styling",
+  "Minimap pins are steadier with persistent terrain history, thinner marker sizing, smoother filtering, and broader storage recognition",
+  "SchemBuild and AutoMapart now travel and place more reliably while the release build hotfix keeps RMod, ClickGUI, and AutoMapart compiling cleanly on Windows"
 ]
 }
