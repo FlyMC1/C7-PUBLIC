@@ -1,13 +1,13 @@
 {
-  "version": "2.0.57",
+  "version": "2.0.58",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "63844be78f096ce57b7e18e8dd56834656f427762ce479cf6a87075e540570fb",
-  "injector_sha256": "1ee09bdd7748ff5626a1ff0c29d068e24ed80a9383cf6a23c57b13ec7ada2d9b",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.57",
+  "dll_sha256": "d154d3bee12689f7b77ef06a8cd23bdfa2339d79f6ae7d19b918e049297d61a4",
+  "injector_sha256": "8ef238cb520dcfefc34692574d0c2f901a7adf04fa60232e29c488473815abac",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.58",
   "latest_features": [ 
-  "ClickGUI now reuses the shipped background image for its centered overlay art and ships with cleaner metallic panel styling",
-  "Minimap pins are steadier with persistent terrain history, thinner marker sizing, smoother filtering, and broader storage recognition",
-  "SchemBuild and AutoMapart now travel and place more reliably while the release build hotfix keeps RMod, ClickGUI, and AutoMapart compiling cleanly on Windows"
+  "ClickGUI no longer loads a fullscreen background image, removing the broken menu rendering path from the last polish pass",
+  "Removed the dead Background Opacity menu setting and shipped background asset so the UI now falls back to blur, dimming, and the optional centered icon overlay",
+  "Fixed the old background-image lookup fallback that could recurse indefinitely when no valid image path resolved"
 ]
 }
