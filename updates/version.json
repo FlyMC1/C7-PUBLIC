@@ -1,10 +1,10 @@
 {
-  "version": "2.0.56",
+  "version": "2.0.57",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "83823fb82c0d07a1a2f2acb46979bed919067dd68d41b366cdb94d102be6d758",
-  "injector_sha256": "179eb8b5b19ae3cd0e6a0f309f6cab7963f9b8341c72cd73af47dfd35d230551",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.56",
+  "dll_sha256": "63844be78f096ce57b7e18e8dd56834656f427762ce479cf6a87075e540570fb",
+  "injector_sha256": "1ee09bdd7748ff5626a1ff0c29d068e24ed80a9383cf6a23c57b13ec7ada2d9b",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.57",
   "latest_features": [ 
   "ClickGUI now reuses the shipped background image for its centered overlay art and ships with cleaner metallic panel styling",
   "Minimap pins are steadier with persistent terrain history, thinner marker sizing, smoother filtering, and broader storage recognition",
