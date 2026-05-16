@@ -1,13 +1,13 @@
 {
-  "version": "2.0.61",
+  "version": "2.0.62",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "99b72055fa81fbd546a49ee43f3868019aeb72b9fa65c69e4f9cb6209c14f08e",
-  "injector_sha256": "572be5abe175fbee8691d3bb0544e5be8bf814c95f84a401d49a5de5b928426c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.61",
+  "dll_sha256": "964669a7f731b86ba1a090333cc6297e3c1e9b7bd07e1048acb4f129cb67dd45",
+  "injector_sha256": "d0def3ecd46c7646e28b45fcec6d0bad90a06fc87912ed326c0cef449ff57f6e",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.62",
   "latest_features": [
-  "ClickGUI keeps the darker pre-metallic rollback and safe D2D sizing from v2.0.60 without relying on any background image asset",
-  "Whitelist and admin policy tiers now allow ClickGUI again, restoring the Insert in-game module menu for privileged users",
-  "The embedded policy header was regenerated from access_policy.json so the fixed ClickGUI access rules ship in the DLL immediately"
+  "Admin access now always sees every module while public and whitelist visibility stay configurable per module through access_policy.json",
+  "ClickGUI now uses a squared connected category-header row under the top tabs with a cleaner beveled panel style",
+  "The main module tab adds an in-GUI search box so you can filter modules instantly without losing the normal category layout"
 ]
 }
