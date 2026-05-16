@@ -1,13 +1,13 @@
 {
-  "version": "2.0.59",
+  "version": "2.0.60",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "0e2bf66d8c610dc233c1bdf6673975f3ec2a19c7effaae6b01595e72306e3341",
-  "injector_sha256": "116a38609f5ceb2baa4d24085bc214b604c8f1166885acc70642653f838143e0",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.59",
-  "latest_features": [ 
-  "ClickGUI now lays itself out from the D2D render-target size so the menu stays visible even when guiData window metrics are stale or zero",
-  "Removed the remaining centered icon image overlay path and its settings so the menu no longer depends on any external image asset to render safely",
-  "Hardened the normal ClickGUI window branch with a safe CustomFont fallback so the panel layout still draws when optional font state is unavailable"
+  "dll_sha256": "34560be04e0a378ecee9ed04eeb62fa62c035c64a8187eca4fe7e549225e0547",
+  "injector_sha256": "06ad8bddeac1968e6c57ffa3d6eb2d0b6cf0d64f227dc7ad569f7aa3a82d024b",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.60",
+  "latest_features": [
+  "ClickGUI has been rolled back to the darker pre-metallic look and no longer depends on any background image asset to render",
+  "The stale background-image resolver and orphaned overlay settings were removed while keeping the newer D2D sizing and CustomFont safety guards",
+  "RMod restores the Edit Video launch button on the main title screen, anchored beside the title when possible and centered on the right as a fallback"
 ]
 }
