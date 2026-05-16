@@ -1,13 +1,13 @@
 {
-  "version": "2.0.60",
+  "version": "2.0.61",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "34560be04e0a378ecee9ed04eeb62fa62c035c64a8187eca4fe7e549225e0547",
-  "injector_sha256": "06ad8bddeac1968e6c57ffa3d6eb2d0b6cf0d64f227dc7ad569f7aa3a82d024b",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.60",
+  "dll_sha256": "99b72055fa81fbd546a49ee43f3868019aeb72b9fa65c69e4f9cb6209c14f08e",
+  "injector_sha256": "572be5abe175fbee8691d3bb0544e5be8bf814c95f84a401d49a5de5b928426c",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.61",
   "latest_features": [
-  "ClickGUI has been rolled back to the darker pre-metallic look and no longer depends on any background image asset to render",
-  "The stale background-image resolver and orphaned overlay settings were removed while keeping the newer D2D sizing and CustomFont safety guards",
-  "RMod restores the Edit Video launch button on the main title screen, anchored beside the title when possible and centered on the right as a fallback"
+  "ClickGUI keeps the darker pre-metallic rollback and safe D2D sizing from v2.0.60 without relying on any background image asset",
+  "Whitelist and admin policy tiers now allow ClickGUI again, restoring the Insert in-game module menu for privileged users",
+  "The embedded policy header was regenerated from access_policy.json so the fixed ClickGUI access rules ship in the DLL immediately"
 ]
 }
