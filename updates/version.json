@@ -1,13 +1,13 @@
 {
-  "version": "2.0.62",
+  "version": "2.0.63",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "964669a7f731b86ba1a090333cc6297e3c1e9b7bd07e1048acb4f129cb67dd45",
-  "injector_sha256": "d0def3ecd46c7646e28b45fcec6d0bad90a06fc87912ed326c0cef449ff57f6e",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.62",
+  "dll_sha256": "6ca59e0199407d245fca5bfafe963aafdcf71ec9cf5d7d6cb66cfca215187923",
+  "injector_sha256": "96f0b9984c90b620b20aa50ce4f953946b1f9a74284aa5e53863bd63b5b6927b",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.63",
   "latest_features": [
-  "Admin access now always sees every module while public and whitelist visibility stay configurable per module through access_policy.json",
-  "ClickGUI now uses a squared connected category-header row under the top tabs with a cleaner beveled panel style",
-  "The main module tab adds an in-GUI search box so you can filter modules instantly without losing the normal category layout"
+  "SchemBuild layer scaffold now falls back off stalled block batches so it keeps committing nearby ghost blocks instead of freezing after a few placements",
+  "The injector now cache-busts release manifest requests so freshly published versions do not get stuck behind stale GitHub CDN metadata",
+  "v2.0.63 packages the SchemBuild commit-through fix together with the launcher-side latest-release refresh fix in one full release"
 ]
 }
