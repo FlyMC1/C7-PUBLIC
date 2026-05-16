@@ -1,13 +1,13 @@
 {
-  "version": "2.0.58",
+  "version": "2.0.59",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "d154d3bee12689f7b77ef06a8cd23bdfa2339d79f6ae7d19b918e049297d61a4",
-  "injector_sha256": "8ef238cb520dcfefc34692574d0c2f901a7adf04fa60232e29c488473815abac",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.58",
+  "dll_sha256": "0e2bf66d8c610dc233c1bdf6673975f3ec2a19c7effaae6b01595e72306e3341",
+  "injector_sha256": "116a38609f5ceb2baa4d24085bc214b604c8f1166885acc70642653f838143e0",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.59",
   "latest_features": [ 
-  "ClickGUI no longer loads a fullscreen background image, removing the broken menu rendering path from the last polish pass",
-  "Removed the dead Background Opacity menu setting and shipped background asset so the UI now falls back to blur, dimming, and the optional centered icon overlay",
-  "Fixed the old background-image lookup fallback that could recurse indefinitely when no valid image path resolved"
+  "ClickGUI now lays itself out from the D2D render-target size so the menu stays visible even when guiData window metrics are stale or zero",
+  "Removed the remaining centered icon image overlay path and its settings so the menu no longer depends on any external image asset to render safely",
+  "Hardened the normal ClickGUI window branch with a safe CustomFont fallback so the panel layout still draws when optional font state is unavailable"
 ]
 }
