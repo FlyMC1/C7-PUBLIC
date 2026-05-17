@@ -1,10 +1,10 @@
 {
-  "version": "2.0.64",
+  "version": "2.0.65",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "fc7c36f86391170dfe7399a54b2ebef509e931c8cbb27e68dc13678d7b7b214e",
-  "injector_sha256": "fcc40726b21bd075a5b29d0aaf488f07f54f99bafbda56ea6a376f6e5e2d82ed",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.64",
+  "dll_sha256": "12298a6cdb9f6689f48b951397160c7c553262aef43889d73feb8648909b3f84",
+  "injector_sha256": "411a53058a861b8dbe4d49852336a932c1880586c5d7af43415afe3b698a22f8",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.65",
   "latest_features": [
   "SchemBuild layer scaffold now falls back off stalled block batches so it keeps committing nearby ghost blocks instead of freezing after a few placements",
   "The injector now cache-busts release manifest requests so freshly published versions do not get stuck behind stale GitHub CDN metadata",
