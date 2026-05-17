@@ -1,13 +1,13 @@
 {
-  "version": "2.0.67",
+  "version": "2.0.68",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "d17045469c33dd03f77428b5192f45d060bd5b0d52104345cb95f0fa5451777f",
-  "injector_sha256": "ac57821f35a8bdd4c15466a87cc32cd0f8a21c4dfb2cc89e8be7396c678f38b2",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.67",
+  "dll_sha256": "3dfca954b75918666d2d5befa00bd9908eb8bfc451cb7c055ce849fba6d139d5",
+  "injector_sha256": "2d9f81bf03aff65b6f2cf82f12d8b1151f8edede29d8dc849439b20c35a7bf87",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.68",
   "latest_features": [
-  "Admin accounts now have unconditional module access: every module is available automatically without per-module admin policy entries",
-  "Admin module access tables are ignored in runtime policy decisions, removing the manual select-list maintenance path",
-  "Injector update endpoints are pinned to public release/manifests to keep update checks and DLL downloads reachable"
+  "PacketAddresses now ships as a World module and resolves correctly through policy visibility checks for admins and legacy aliases",
+  "ShulkerPreview is registered again, and HUD inventory view now renders item icons in the correct inventory slot positions",
+  "AutoMapart now quantizes source images to the mapart build palette before placement so planned colors match the actual build set"
 ]
 }
