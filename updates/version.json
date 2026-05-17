@@ -2,8 +2,8 @@
   "version": "2.0.65",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "12298a6cdb9f6689f48b951397160c7c553262aef43889d73feb8648909b3f84",
-  "injector_sha256": "411a53058a861b8dbe4d49852336a932c1880586c5d7af43415afe3b698a22f8",
+  "dll_sha256": "77f90ed62368defeb1ceb90d5f085188cfe727147007b2a8a4862e0f5ea7408c",
+  "injector_sha256": "ae3c44236ba8b52a043d6d534f87452d55d0e4a91cdd35d4960292793b990600",
   "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.65",
   "latest_features": [
   "SchemBuild layer scaffold now falls back off stalled block batches so it keeps committing nearby ghost blocks instead of freezing after a few placements",
