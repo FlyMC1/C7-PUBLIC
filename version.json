@@ -1,13 +1,14 @@
 {
-  "version": "2.0.68",
+  "version": "2.0.75",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "3dfca954b75918666d2d5befa00bd9908eb8bfc451cb7c055ce849fba6d139d5",
-  "injector_sha256": "2d9f81bf03aff65b6f2cf82f12d8b1151f8edede29d8dc849439b20c35a7bf87",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.68",
+  "dll_sha256": "fcb557345a290e5af3825963c5fd662c19f1345d375ca3b5003750ed78a125e6",
+  "injector_sha256": "bd33d2415cd70a93c8c14fe5785e8b76e8467a5bb42fe35d2a6868fde961cc82",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.75",
   "latest_features": [
-  "PacketAddresses now ships as a World module and resolves correctly through policy visibility checks for admins and legacy aliases",
-  "ShulkerPreview is registered again, and HUD inventory view now renders item icons in the correct inventory slot positions",
-  "AutoMapart now quantizes source images to the mapart build palette before placement so planned colors match the actual build set"
+  "Hotfix: corrected shulker preview shared-header SDK include paths for the in-tree shulker_view integration so Windows release builds compile",
+  "ShulkerPreview now reads hovered shulker item NBT directly so the preview grid reflects real stored contents instead of relying on heuristic text parsing",
+  "HUD inventory view adds an extra 2x scale boost and centers item icons/counts cleanly inside each table slot",
+  "Minimap storage markers now classify droppers and dispensers as their own tracked block types instead of collapsing them into mixed storage"
 ]
 }
