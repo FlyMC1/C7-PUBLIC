@@ -1,10 +1,10 @@
 {
-  "version": "2.0.81",
+  "version": "2.0.82",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "87ee76c151d470bb5f212f61e65fbd54ffdc0338508cb4236609995498c03298",
-  "injector_sha256": "a940608ed9bb4afed941e3b185220896c4504c8f4235ae662865072ce76e8ddf",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.81",
+  "dll_sha256": "aaa8cdbbdd936ad9b512142ec8f0121fce4b0259fa762d3bca3201fc30661266",
+  "injector_sha256": "7f022ca2c30472d08742e5716a0b6ce1fd724de12359d659b47eb8c5c504ba26",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.82",
   "latest_features": [
   "Hotfix: corrected shulker preview shared-header SDK include paths for the in-tree shulker_view integration so Windows release builds compile",
   "ShulkerPreview now reads hovered shulker item NBT directly so the preview grid reflects real stored contents instead of relying on heuristic text parsing",
