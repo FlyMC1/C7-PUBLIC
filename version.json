@@ -1,14 +1,14 @@
 {
-  "version": "2.0.90",
+  "version": "2.0.91",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "a8c8c47fc60d2167cfb5cf2f54ccce7e48c8f2f5c3b09b8a10ef3c0c4c05ce4c",
-  "injector_sha256": "d2e1f5b85af52dafabae24619d1f603c99c06dc74af3976da843737828e5fc37",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.90",
+  "dll_sha256": "f15eadd4e5276eb6eb70908bf03d78580a4e669b1617ce2800ff46fdf7415766",
+  "injector_sha256": "3d15d8cebc4e7fa7d0f6198d80ad636cc974071ca2eb8e8eebf8ac885838d994",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.91",
   "latest_features": [
-  "New PatchTest admin-only World diagnostic module reproduces and logs UI-backed inventory synchronization edge cases with passive and probe modes",
-  "PatchTest now correlates ItemStackRequest routing, legacy InventoryTransaction addAction flows, and inbound inventory response timing packets in one session log",
-  "Inventory sync diagnostics compare screen transitions, UI-open state, viewer mismatches, and slot deltas to surface delayed resync behavior",
-  "Release wiring includes PatchTest project registration, admin-only policy gating, and the new inventory action hook surface needed for legacy trace capture"
+  "New ShulkDub1 admin-only module: automatically finds nearby containers, opens them, and drops up to 27 items per cycle with configurable search radius and drop delay",
+  "HUD Inventory view now displays a clean 3x9 grid with item icons, stack counts (x# labels), and independent opacity control",
+  "Container detection covers chest, trapped chest, ender chest, hopper, and shulker box block types with distance-based nearest-neighbor selection",
+  "Admin access enforcement via policy: ShulkDub1 visible only to whitelisted admin users"
 ]
 }
