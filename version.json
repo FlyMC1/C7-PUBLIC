@@ -1,14 +1,15 @@
 {
-  "version": "2.0.91",
+  "version": "2.0.92",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "f15eadd4e5276eb6eb70908bf03d78580a4e669b1617ce2800ff46fdf7415766",
-  "injector_sha256": "3d15d8cebc4e7fa7d0f6198d80ad636cc974071ca2eb8e8eebf8ac885838d994",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.91",
+  "dll_sha256": "273ac7328ecbb03e2f82683fbf81bde7b4e7e10ea3f0e81b4e1afafed3e99807",
+  "injector_sha256": "9202f02a67ec61937ebb3e661a51d224302b3ea08701cf655938d26fbbbb6b72",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.92",
   "latest_features": [
-  "New ShulkDub1 admin-only module: automatically finds nearby containers, opens them, and drops up to 27 items per cycle with configurable search radius and drop delay",
-  "HUD Inventory view now displays a clean 3x9 grid with item icons, stack counts (x# labels), and independent opacity control",
-  "Container detection covers chest, trapped chest, ender chest, hopper, and shulker box block types with distance-based nearest-neighbor selection",
-  "Admin access enforcement via policy: ShulkDub1 visible only to whitelisted admin users"
+  "SchemBuild: ghost blocks now always render as full 1x1x1 cubes regardless of depth slider value",
+  "SchemBuild: eliminated purple/black missing-texture overlay; ghost blocks show correct per-block colours",
+  "SchemBuild: Placement Mode, Fly Mode, and Ghost Render settings now visible and clickable in the settings panel",
+  "SchemBuild: Locate button now opens the file-open dialog correctly even in fullscreen mode",
+  "SchemBuild: fixed crash when re-opening the Schembuild menu after loading a schematic"
 ]
 }
