@@ -1,15 +1,13 @@
 {
-  "version": "2.0.92",
+  "version": "2.0.93",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "273ac7328ecbb03e2f82683fbf81bde7b4e7e10ea3f0e81b4e1afafed3e99807",
-  "injector_sha256": "9202f02a67ec61937ebb3e661a51d224302b3ea08701cf655938d26fbbbb6b72",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.92",
+  "dll_sha256": "45a5940fdd2828f200ae380d2514e1a99fb69f15497b7808e15095a2a5d65eb7",
+  "injector_sha256": "ff12502599d8b41f551b8a85218cfccf5b26bfed3370e41488d75b64e0085c63",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.93",
   "latest_features": [
-  "SchemBuild: ghost blocks now always render as full 1x1x1 cubes regardless of depth slider value",
-  "SchemBuild: eliminated purple/black missing-texture overlay; ghost blocks show correct per-block colours",
-  "SchemBuild: Placement Mode, Fly Mode, and Ghost Render settings now visible and clickable in the settings panel",
-  "SchemBuild: Locate button now opens the file-open dialog correctly even in fullscreen mode",
-  "SchemBuild: fixed crash when re-opening the Schembuild menu after loading a schematic"
+  "SchemBuild: restored textured ghost block rendering after the post-2.0.92 regression",
+  "Admin: DrollSpeed 2.0 adds sprint-latched auto-crouch movement with configurable speed and timer boost",
+  "Admin: DrollSpeed 2.0 includes optional phase modes and above/below-floor position spoof controls"
 ]
 }
