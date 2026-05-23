@@ -1,13 +1,13 @@
 {
-  "version": "2.0.100",
+  "version": "2.0.103",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "696f9cd221fd8dad1c4362d017218ea6085d5dc674554aed1ceec97d381dea12",
-  "injector_sha256": "5521e5871b4234b822916c5ae1d243b12a51ed3fe84d003aeedb3c7bd257571e",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.100",
+  "dll_sha256": "7d450ab6c2b65cbc7fde05d6beb203a6b5e6c1fee5d7d07a4b46fad27fe248ca",
+  "injector_sha256": "138a241cfed41834da02bb8036d2ad3e7d328712d8c06fb52af7785da1ef37ae",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.103",
   "latest_features": [
-  "World/optest: added a standalone shulker craft/eject module with its own dedicated inventory action hook path",
-  "Hooks: split inventory transaction observation into isolated OpTest hooks so module behavior is decoupled from existing shulker modules",
-  "Policy: added explicit access controls for optest across regular, whitelist, and admin module access maps"
+  "OpTest: fixed shulker NBT duplication — craft loop now correctly merges up to 64 copies server-side and drops all stacks into the world via a proper SOURCE_WORLD transaction",
+  "Hotfix: fixed release CI compile blockers in OpTest inventory hooks, PlayerSlowDown hook module includes, and SchemBuild ghost distance check",
+  "Hotfix: added OpTest source/header back into C7-Client.vcxproj and filters to resolve linker symbol failures"
 ]
 }
