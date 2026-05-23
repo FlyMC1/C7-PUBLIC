@@ -1,16 +1,16 @@
 {
-  "version": "2.0.106",
+  "version": "2.0.107",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "a19878a1cf1ffed5ddd583352a4a7bc6bcddaf8d92e4a365d72da081c44d4a90",
-  "injector_sha256": "d5f7b958db4605b6a9e38ac55fb0cbeef525f50d79a5bd52b089974091e1ffc9",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.106",
+  "dll_sha256": "91ec248984a9e40e750bfc42801a1fdafb70fe1dd74c0f20873af93019988346",
+  "injector_sha256": "64de58fc938b79eebded557900fa1857633cd699610980ea907d1526147c96d9",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.107",
   "latest_features": [
-  "OpTest: added Split Receive + Drop Delay settings and changed Auto Drop to run after a configurable tick delay so crafted stacks can land before ejection",
-  "ModuleManager: registered OpTest in the world module init list so it can appear in ClickGUI when policy allows it",
-  "Policy sync: regenerated compiled hardcoded policy so optest is visible for admin only (public/whitelist disabled, admin enabled)",
-  "OpTest: fixed shulker NBT duplication — craft loop now correctly merges up to 64 copies server-side and drops all stacks into the world via a proper SOURCE_WORLD transaction",
-  "Hotfix: fixed release CI compile blockers in OpTest inventory hooks, PlayerSlowDown hook module includes, and SchemBuild ghost distance check",
-  "Hotfix: added OpTest source/header back into C7-Client.vcxproj and filters to resolve linker symbol failures"
+  "ModuleManager: cached typed module lookups and skipped access refresh when whitelist gating is disabled",
+  "WorldUtil: fixed raycast X-axis stepping and tightened container detection",
+  "Inventory helpers: reduced repeated slot scans and item-classification churn across placement and mining helpers",
+  "Chat paths: replaced regex-heavy suffix/pop message rewriting with direct string replacement",
+  "Render sweep: cached StorageRadar counts on tick, removed duplicate Minimap storage snapshot rebuilding, and reduced BlockESP scan churn",
+  "World builders: collapsed repeated hotbar slot searches in SchemBuild and trimmed duplicate placement lookups in AutoHoleFill"
 ]
 }
