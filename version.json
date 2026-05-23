@@ -1,11 +1,13 @@
 {
-  "version": "2.0.111",
+  "version": "2.0.112",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "71437cfb28539612899797ea9544e377f0337b131c76b988fd4cf852010e600c",
-  "injector_sha256": "492d2f0fc2ef0a58d988649bd2483cf8be360d4e6b3c172d98114d190e16ffe6",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.111",
+  "dll_sha256": "6df584e09e3d96723364d2e888f5c0dfb8902ad9f6d06d32261ebae778f76d34",
+  "injector_sha256": "995f2edd2123f12bac5c9a786749b22b3bda486e4b1973e759c62de396241e84",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.112",
   "latest_features": [
+  "OpTest: added explicit Automation Mode (Continuous Auto, Timed Bursts, Single Burst) with Max Bursts control",
+  "OpTest: added balanced consume/output burst pattern option to reduce ghost rollback and improve persistence",
   "Release hotfix: added DrollSpeed2 sources to C7-Client project files to resolve LNK2001/LNK1120 in Windows release build",
   "Release hotfix: restored ClickGUI category-row counter declaration to fix Windows CI compile failure",
   "Release hotfix: fixed ClickGUI syntax regression that blocked Windows build/release packaging",
