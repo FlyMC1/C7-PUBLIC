@@ -1,13 +1,13 @@
 {
-  "version": "2.0.94",
+  "version": "2.0.95",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "f3caff7530a4601e2dfb985d08ad3dfef1c2160970adcb4c2df0b95227f8045d",
-  "injector_sha256": "01e2e42c492dbe0b0214aeaef93dfab3a8679d8d38d57fe8ffbaf3ea8620b630",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.94",
+  "dll_sha256": "956b70315317673a19c8327e532470e07b49e6d84c145e9ccbeec3f6c6f9fcb3",
+  "injector_sha256": "b344fbba59cfc5d695b5d294fba46eaef51c4fa04f4dfb31636691cd3892e261",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.95",
   "latest_features": [
-  "SchemBuild: fixed the textured ghost block crash by aligning UI texture lookups with the current hashed resource layout",
-  "SchemBuild: Textured Blocks mode now renders actual block textures again instead of falling back or crashing",
-  "SchemBuild: textured ghost overlays remain sized to the projected block footprint so previews stay readable in-world"
+  "SchemBuild: removed the unstable ghost texture fetch path so textured ghost builds no longer show purple/black error blocks or hit the related crash path",
+  "Scaffold: added Walk Speed, Packet Place, Mass Place, and Blocks/Tick, and preserved packet placement through support-block fallback for stricter servers",
+  "Waypoint and ShulkerPreview: hardened waypoint coordinate/render guards and fixed shulker hover-slot detection so previews resolve reliably in inventory screens"
 ]
 }
