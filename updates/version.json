@@ -1,13 +1,13 @@
 {
-  "version": "2.0.93",
+  "version": "2.0.94",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "45a5940fdd2828f200ae380d2514e1a99fb69f15497b7808e15095a2a5d65eb7",
-  "injector_sha256": "ff12502599d8b41f551b8a85218cfccf5b26bfed3370e41488d75b64e0085c63",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.93",
+  "dll_sha256": "f3caff7530a4601e2dfb985d08ad3dfef1c2160970adcb4c2df0b95227f8045d",
+  "injector_sha256": "01e2e42c492dbe0b0214aeaef93dfab3a8679d8d38d57fe8ffbaf3ea8620b630",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.94",
   "latest_features": [
-  "SchemBuild: restored textured ghost block rendering after the post-2.0.92 regression",
-  "Admin: DrollSpeed 2.0 adds sprint-latched auto-crouch movement with configurable speed and timer boost",
-  "Admin: DrollSpeed 2.0 includes optional phase modes and above/below-floor position spoof controls"
+  "SchemBuild: fixed the textured ghost block crash by aligning UI texture lookups with the current hashed resource layout",
+  "SchemBuild: Textured Blocks mode now renders actual block textures again instead of falling back or crashing",
+  "SchemBuild: textured ghost overlays remain sized to the projected block footprint so previews stay readable in-world"
 ]
 }
