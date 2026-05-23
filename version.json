@@ -1,13 +1,13 @@
 {
-  "version": "2.0.95",
+  "version": "2.0.100",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "956b70315317673a19c8327e532470e07b49e6d84c145e9ccbeec3f6c6f9fcb3",
-  "injector_sha256": "b344fbba59cfc5d695b5d294fba46eaef51c4fa04f4dfb31636691cd3892e261",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.95",
+  "dll_sha256": "696f9cd221fd8dad1c4362d017218ea6085d5dc674554aed1ceec97d381dea12",
+  "injector_sha256": "5521e5871b4234b822916c5ae1d243b12a51ed3fe84d003aeedb3c7bd257571e",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.100",
   "latest_features": [
-  "SchemBuild: removed the unstable ghost texture fetch path so textured ghost builds no longer show purple/black error blocks or hit the related crash path",
-  "Scaffold: added Walk Speed, Packet Place, Mass Place, and Blocks/Tick, and preserved packet placement through support-block fallback for stricter servers",
-  "Waypoint and ShulkerPreview: hardened waypoint coordinate/render guards and fixed shulker hover-slot detection so previews resolve reliably in inventory screens"
+  "World/optest: added a standalone shulker craft/eject module with its own dedicated inventory action hook path",
+  "Hooks: split inventory transaction observation into isolated OpTest hooks so module behavior is decoupled from existing shulker modules",
+  "Policy: added explicit access controls for optest across regular, whitelist, and admin module access maps"
 ]
 }
