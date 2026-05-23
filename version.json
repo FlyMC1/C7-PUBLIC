@@ -1,16 +1,19 @@
 {
-  "version": "2.0.107",
+  "version": "2.0.111",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "91ec248984a9e40e750bfc42801a1fdafb70fe1dd74c0f20873af93019988346",
-  "injector_sha256": "64de58fc938b79eebded557900fa1857633cd699610980ea907d1526147c96d9",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.107",
+  "dll_sha256": "71437cfb28539612899797ea9544e377f0337b131c76b988fd4cf852010e600c",
+  "injector_sha256": "492d2f0fc2ef0a58d988649bd2483cf8be360d4e6b3c172d98114d190e16ffe6",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.111",
   "latest_features": [
-  "ModuleManager: cached typed module lookups and skipped access refresh when whitelist gating is disabled",
-  "WorldUtil: fixed raycast X-axis stepping and tightened container detection",
-  "Inventory helpers: reduced repeated slot scans and item-classification churn across placement and mining helpers",
-  "Chat paths: replaced regex-heavy suffix/pop message rewriting with direct string replacement",
-  "Render sweep: cached StorageRadar counts on tick, removed duplicate Minimap storage snapshot rebuilding, and reduced BlockESP scan churn",
-  "World builders: collapsed repeated hotbar slot searches in SchemBuild and trimmed duplicate placement lookups in AutoHoleFill"
+  "Release hotfix: added DrollSpeed2 sources to C7-Client project files to resolve LNK2001/LNK1120 in Windows release build",
+  "Release hotfix: restored ClickGUI category-row counter declaration to fix Windows CI compile failure",
+  "Release hotfix: fixed ClickGUI syntax regression that blocked Windows build/release packaging",
+  "Minimap: switched to simple textured pixel block colors with adjustable Shadow Cast from higher terrain",
+  "Minimap: added pin controls (Show Pins and Pixel Pins) with hard pixel snapping and reduced movement flicker",
+  "ClickGUI: added mouse-wheel scrolling for long module lists and settings headers",
+  "ShulkerPreview: redesigned fallback sourcing and live snapshot retry path for reliable rendering",
+  "OpTest: wired Strict Preflight and Adaptive Fallback settings so new controls apply at runtime",
+  "Module registry: fixed DrollSpeed2 registration so admin visibility and loading are consistent"
 ]
 }
