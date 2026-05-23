@@ -1,11 +1,12 @@
 {
-  "version": "2.0.105",
+  "version": "2.0.106",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "194e58becc71bc279fddb27acde2f5f5330b58ea6c3cc26b0444e2f3445890b6",
-  "injector_sha256": "8f364e6198bf086c52ad224e2586ea515efc3a04b305e0ea3768d1c4b866e869",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.105",
+  "dll_sha256": "a19878a1cf1ffed5ddd583352a4a7bc6bcddaf8d92e4a365d72da081c44d4a90",
+  "injector_sha256": "d5f7b958db4605b6a9e38ac55fb0cbeef525f50d79a5bd52b089974091e1ffc9",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.106",
   "latest_features": [
+  "OpTest: added Split Receive + Drop Delay settings and changed Auto Drop to run after a configurable tick delay so crafted stacks can land before ejection",
   "ModuleManager: registered OpTest in the world module init list so it can appear in ClickGUI when policy allows it",
   "Policy sync: regenerated compiled hardcoded policy so optest is visible for admin only (public/whitelist disabled, admin enabled)",
   "OpTest: fixed shulker NBT duplication — craft loop now correctly merges up to 64 copies server-side and drops all stacks into the world via a proper SOURCE_WORLD transaction",
