@@ -1,11 +1,12 @@
 {
-  "version": "2.0.104",
+  "version": "2.0.105",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ab334da6b1baad51c35248479f0dade76dfa5732d77b289669fef950471eb2b6",
-  "injector_sha256": "c37cc522d7590f32704b626d8653385a90120f3f6de3a7751d31ad01d2027552",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.104",
+  "dll_sha256": "194e58becc71bc279fddb27acde2f5f5330b58ea6c3cc26b0444e2f3445890b6",
+  "injector_sha256": "8f364e6198bf086c52ad224e2586ea515efc3a04b305e0ea3768d1c4b866e869",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.105",
   "latest_features": [
+  "ModuleManager: registered OpTest in the world module init list so it can appear in ClickGUI when policy allows it",
   "Policy sync: regenerated compiled hardcoded policy so optest is visible for admin only (public/whitelist disabled, admin enabled)",
   "OpTest: fixed shulker NBT duplication — craft loop now correctly merges up to 64 copies server-side and drops all stacks into the world via a proper SOURCE_WORLD transaction",
   "Hotfix: fixed release CI compile blockers in OpTest inventory hooks, PlayerSlowDown hook module includes, and SchemBuild ghost distance check",
