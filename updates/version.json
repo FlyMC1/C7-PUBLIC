@@ -1,13 +1,13 @@
 {
-  "version": "2.0.117",
+  "version": "2.0.118",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "761889f906cca98691b9dfbc2aa135fda3278ad34e4e9480e856caf2cbd4c2c9",
-  "injector_sha256": "4e896a8b8c5825cb679ea299b5bc21559eb0048781747ac8cb61a99caec7f4fa",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.117",
+  "dll_sha256": "d7467407d1b369159c6a49f8eefaa7d38cfe3358ede5410dc618f6da01fade45",
+  "injector_sha256": "24ddbed814a2514796760d11d55e6e7872ac9ed610826f92eada940b3f0b8b07",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.118",
   "latest_features": [ 
-  "GhostRenderTest: fixed MSVC compile errors by aligning helper LocalPlayer pointer constness with SDK non-const accessors",
-  "GhostRenderTest: fixed debug overlay line-height call to the correct D2D::getTextHeight signature",
-  "OpTest: retained target-slot telemetry for before/after shulker and count diagnostics"
+  "GhostRenderTest: backend ALL now maps top/bottom/side ghost frame faces to side-specific texture keys",
+  "Injector: proxy upstream input now accepts typed host, host:port, and bracketed IPv6 endpoints",
+  "Injector: auto-derives local proxy port from upstream endpoint when local port input is left empty"
 ]
 }
