@@ -1,21 +1,13 @@
 {
-  "version": "2.0.112",
+  "version": "2.0.115",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "6df584e09e3d96723364d2e888f5c0dfb8902ad9f6d06d32261ebae778f76d34",
-  "injector_sha256": "995f2edd2123f12bac5c9a786749b22b3bda486e4b1973e759c62de396241e84",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.112",
+  "dll_sha256": "730520720179c1e963ac1bc20a83fec8d4bedce32b8a730996328a5c8754d08a",
+  "injector_sha256": "743f149ceae65900817af83635d39081377003ef23f8924404cfaeff2e52e043",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.115",
   "latest_features": [
-  "OpTest: added explicit Automation Mode (Continuous Auto, Timed Bursts, Single Burst) with Max Bursts control",
-  "OpTest: added balanced consume/output burst pattern option to reduce ghost rollback and improve persistence",
-  "Release hotfix: added DrollSpeed2 sources to C7-Client project files to resolve LNK2001/LNK1120 in Windows release build",
-  "Release hotfix: restored ClickGUI category-row counter declaration to fix Windows CI compile failure",
-  "Release hotfix: fixed ClickGUI syntax regression that blocked Windows build/release packaging",
-  "Minimap: switched to simple textured pixel block colors with adjustable Shadow Cast from higher terrain",
-  "Minimap: added pin controls (Show Pins and Pixel Pins) with hard pixel snapping and reduced movement flicker",
-  "ClickGUI: added mouse-wheel scrolling for long module lists and settings headers",
-  "ShulkerPreview: redesigned fallback sourcing and live snapshot retry path for reliable rendering",
-  "OpTest: wired Strict Preflight and Adaptive Fallback settings so new controls apply at runtime",
-  "Module registry: fixed DrollSpeed2 registration so admin visibility and loading are consistent"
+  "OpTest: fixed MSVC release build failure by using mutable ItemStack pointers in balanced InventoryAction construction",
+  "OpTest: retained Template Mode override, telemetry, and cycle jitter controls from v2.0.114",
+  "Policy: keeps OpTest enabled for whitelist/admin and disabled for public"
 ]
 }
