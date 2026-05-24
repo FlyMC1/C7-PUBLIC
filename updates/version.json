@@ -1,13 +1,13 @@
 {
-  "version": "2.0.115",
+  "version": "2.0.117",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "730520720179c1e963ac1bc20a83fec8d4bedce32b8a730996328a5c8754d08a",
-  "injector_sha256": "743f149ceae65900817af83635d39081377003ef23f8924404cfaeff2e52e043",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.115",
-  "latest_features": [
-  "OpTest: fixed MSVC release build failure by using mutable ItemStack pointers in balanced InventoryAction construction",
-  "OpTest: retained Template Mode override, telemetry, and cycle jitter controls from v2.0.114",
-  "Policy: keeps OpTest enabled for whitelist/admin and disabled for public"
+  "dll_sha256": "761889f906cca98691b9dfbc2aa135fda3278ad34e4e9480e856caf2cbd4c2c9",
+  "injector_sha256": "4e896a8b8c5825cb679ea299b5bc21559eb0048781747ac8cb61a99caec7f4fa",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.117",
+  "latest_features": [ 
+  "GhostRenderTest: fixed MSVC compile errors by aligning helper LocalPlayer pointer constness with SDK non-const accessors",
+  "GhostRenderTest: fixed debug overlay line-height call to the correct D2D::getTextHeight signature",
+  "OpTest: retained target-slot telemetry for before/after shulker and count diagnostics"
 ]
 }
