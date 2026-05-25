@@ -1,13 +1,13 @@
 {
-  "version": "2.0.121",
+  "version": "2.0.122",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ed8e628cecb3e5fdb1a48750f37dbbcfd1d0e7758c65ddc99c6461cc50abfe4f",
-  "injector_sha256": "8acab304d7c578439067ec012ca96b165e0e6db927704f4ebc4d51912cd2bbae",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.121",
+  "dll_sha256": "2582f4f3874cc06492338afb9028ec4d8b9a2dd291943ac54ca88072b5597906",
+  "injector_sha256": "b42ca445d6c234f98cc6d588aa34fe20c8dc8110f0b08dbde1cd3e717da10d22",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.122",
   "latest_features": [ 
-  "SchemBuild: added Legacy Sprite and Hooked Ghost Texture render methods for texture visibility fallback",
-  "SchemBuild: hybrid face mode now falls back to center texture sprites when projected face jobs produce no visible textures",
-  "MCR: added drawGhostBlockTexturedHookWithTexture helper to chain ghost hook shading with direct texture sprite injection"
+  "MCR: texture resolution now tries UserPackage, AppPackage, and DataDir resource file systems before falling back",
+  "MCR: expanded missing/checker texture marker detection to reject more black/purple placeholder variants",
+  "MCR: added extra texture name candidates for grass and log families to improve ghost texture hit rate"
 ]
 }
