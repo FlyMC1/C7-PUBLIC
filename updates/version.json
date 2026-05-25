@@ -1,13 +1,13 @@
 {
-  "version": "2.0.120",
+  "version": "2.0.121",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "170af4855b3b08f6f7775e234a2acf89c9b6b57e17a827174fd4df88d9fd4109",
-  "injector_sha256": "c483d42dfb33bb553860bcc14999c43faaca67ecb897c6dced6919e902b29f7f",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.120",
+  "dll_sha256": "ed8e628cecb3e5fdb1a48750f37dbbcfd1d0e7758c65ddc99c6461cc50abfe4f",
+  "injector_sha256": "8acab304d7c578439067ec012ca96b165e0e6db927704f4ebc4d51912cd2bbae",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.121",
   "latest_features": [ 
-  "SchemBuild: added Hybrid Textured ghost mode with exposed-face texture cues and per-frame cue budgets",
-  "SchemBuild: texture cues now prioritize incomplete blocks near the crosshair instead of uniform nearby sprites",
-  "UI cleanup: GhostRenderTest was removed from the visible module list while textured ghost work moves into SchemBuild"
+  "SchemBuild: added Legacy Sprite and Hooked Ghost Texture render methods for texture visibility fallback",
+  "SchemBuild: hybrid face mode now falls back to center texture sprites when projected face jobs produce no visible textures",
+  "MCR: added drawGhostBlockTexturedHookWithTexture helper to chain ghost hook shading with direct texture sprite injection"
 ]
 }
