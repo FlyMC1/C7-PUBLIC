@@ -1,13 +1,13 @@
 {
-  "version": "2.0.125",
+  "version": "2.0.128",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "d65bf60858a2123b6832e1b3a540e0efdcca36719aac72540ef0ae5fae59983f",
-  "injector_sha256": "5081562560f9b4095bb9a6a7afbe995e000c6a5bcd91f4deed6c0f37b4ca593e",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.125",
+  "dll_sha256": "ff815c593ea1dbceaf2cd1991f7c16492de95da2df86d93220f32404579d3e25",
+  "injector_sha256": "66016b6ca056765cdf6403340c1c0f5bf1ee89b0581a4e4b34c77d215786f872",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.128",
   "latest_features": [ 
-  "Movement: added C7 EZ-Fly with seven integrated flight styles under one module",
-  "Renderer: MCR texture resolution probes MaterialsDir/Raw/RawPersistent with sentinel-based missing-texture rejection",
-  "Build: fixed Windows CI linker by adding EzFly.cpp to C7-Client.vcxproj compile sources"
+  "SchemBuild: 9 Ghost Render modes including Through Walls, Mismatch Only, Layer Slice, and Distance LOD",
+  "SchemBuild: live render pass diagnostics (Rb/F/S/K) with budget-clipping visibility for tuning large schematics",
+  "SchemBuild: balanced defaults + mode-specific controls for ThroughWalls and LOD distance/budget behavior"
 ]
 }
