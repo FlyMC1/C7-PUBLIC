@@ -1,13 +1,14 @@
 {
-  "version": "2.0.131",
+  "version": "2.0.132",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ae83e965788494b216c5ece7f242b3a2e7e5de9bf3fe3cae00a45e35ad5d3303",
-  "injector_sha256": "982d9d4fed2a7bc5cc16f486f74b70be60c147a6e98af695ed275f7bf0d5691c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.131",
+  "dll_sha256": "fe2f1ea4c710a3e082891117d9cc00f90e73b34596916ef55dd8e4634796654e",
+  "injector_sha256": "0b92c8c23d660cf7cfc7a47c7eef4bcd89a197e3edbd07d2a65a22486ed43137",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.132",
   "latest_features": [ 
-  "SchemBuild: fixed mismatch mode false positives by bypassing Native Ghost Probe during internal world-state checks",
-  "SchemBuild: switched textured ghost queues to normalized texture keys so render modes resolve proper block textures",
-  "Renderer: tightened missing-texture filtering to avoid caching purple/black placeholder tiles as valid paths"
+  "SchemBuild: added Auto Add placement mode with dedicated range, delay, and blocks-per-tick controls",
+  "SchemBuild: layer scaffold placement now uses mode-aware effective settings for Auto Walk, Auto Fly, and Auto Add",
+  "ShulkerPreview: hardened container slot reads to prevent preview render dropouts when invalid slots are probed",
+  "Policy: enabled ShulkerPreview for admin access and enabled Watermark in public module access"
 ]
 }
