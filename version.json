@@ -1,13 +1,13 @@
 {
-  "version": "2.0.130",
+  "version": "2.0.131",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "3ab8c682c9202be0dfb77506771ee459a085d8a492b8f575584d8e6509625b01",
-  "injector_sha256": "2eb2f960eb5ed85f15abe208a5c2acb2d78066755fdabaabebd223e2e96c843e",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.130",
+  "dll_sha256": "ae83e965788494b216c5ece7f242b3a2e7e5de9bf3fe3cae00a45e35ad5d3303",
+  "injector_sha256": "982d9d4fed2a7bc5cc16f486f74b70be60c147a6e98af695ed275f7bf0d5691c",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.131",
   "latest_features": [ 
-  "SchemBuild: fixed ghost texture lookup and miss-caching so textured ghost modes resolve real block textures reliably",
-  "SchemBuild: unresolved ghost texture misses are now tracked live in diagnostics (tex?) instead of failing silently",
-  "SchemBuild: added experimental Native Ghost Probe mode to test fake-block native-style rendering via block hook sampling"
+  "SchemBuild: fixed mismatch mode false positives by bypassing Native Ghost Probe during internal world-state checks",
+  "SchemBuild: switched textured ghost queues to normalized texture keys so render modes resolve proper block textures",
+  "Renderer: tightened missing-texture filtering to avoid caching purple/black placeholder tiles as valid paths"
 ]
 }
