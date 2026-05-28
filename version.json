@@ -1,13 +1,13 @@
 {
-  "version": "2.0.129",
+  "version": "2.0.130",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "7fd5c04ac5b6448fa2de33746bb0ea25eacaf991790b3206b8547632c53cade1",
-  "injector_sha256": "cac1af2bae5004e876b75c4b4a6f0ab38c1ec9bd55fbbd6e4194576d0ba1f6bd",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.129",
+  "dll_sha256": "3ab8c682c9202be0dfb77506771ee459a085d8a492b8f575584d8e6509625b01",
+  "injector_sha256": "2eb2f960eb5ed85f15abe208a5c2acb2d78066755fdabaabebd223e2e96c843e",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.130",
   "latest_features": [ 
-  "Injector: launcher now uses separate Client, World DL, and Schem Build tabs with in-app path selection",
-  "Policy: access_policy.json changes are bundled and synced into the embedded fallback policy header for this release",
-  "C7 EZ-Fly: jetpack thrust now follows cursor direction through blended lerp-based motion"
+  "SchemBuild: fixed ghost texture lookup and miss-caching so textured ghost modes resolve real block textures reliably",
+  "SchemBuild: unresolved ghost texture misses are now tracked live in diagnostics (tex?) instead of failing silently",
+  "SchemBuild: added experimental Native Ghost Probe mode to test fake-block native-style rendering via block hook sampling"
 ]
 }
