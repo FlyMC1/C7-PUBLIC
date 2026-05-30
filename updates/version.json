@@ -1,17 +1,14 @@
 {
-  "version": "2.0.133",
+  "version": "2.0.134",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "edbbb4ee02f4277a05a977800b03f872e41213a51d4492118cb45f24e4871ae5",
-  "injector_sha256": "0c208e25370bc2dc87a625af3cf1096b4dd386453afdfefe3c617da94b89d182",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.133",
+  "dll_sha256": "59bf13c49c23214e802c3fc76d382abda0c9bcd2a1e58a15f94a874764b87fbc",
+  "injector_sha256": "4b304809443f592b45573186048b7c54e3526bf0ad97dae2de4b820312dd30af",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.134",
   "latest_features": [ 
-  "RMod: added replay session recording with saved block, actor, and camera capture bundles",
-  "RMod: added replay library browsing, playback controls, and export support for saved sessions",
-  "SchemBuild: added Auto Add placement mode with dedicated range, delay, and blocks-per-tick controls",
-  "ContainerCloseTiming: added preset-based container close deferral with Nukkit-compatible drop-before-close replay for standard top containers",
-  "Tick Test: added Back and Forward movement packet timing experiments for one-tick delay/prediction checks",
-  "ShulkerPreview: hardened container slot reads to prevent preview render dropouts when invalid slots are probed",
-  "Policy: enabled ShulkerPreview for admin access and enabled Watermark in public module access"
+  "ContainerCloseTiming: Client First now uses SOURCE_TYPE_CONTAINER_DROP_CONTENTS so drop-before-close follows Nukkit top-window handling on supported windows",
+  "ContainerCloseTiming: drop replay is sent immediately and only the ContainerClose packet stays on the delay path",
+  "ContainerCloseTiming: the module no longer relies on delayed per-window slot-clear plus world-drop pairs for close timing tests",
+  "ContainerCloseTiming: permanent player inventories are skipped so drop-content targeting stays aligned with non-permanent open windows"
 ]
 }
