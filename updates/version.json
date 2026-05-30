@@ -1,14 +1,14 @@
 {
-  "version": "2.0.134",
+  "version": "2.0.135",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "59bf13c49c23214e802c3fc76d382abda0c9bcd2a1e58a15f94a874764b87fbc",
-  "injector_sha256": "4b304809443f592b45573186048b7c54e3526bf0ad97dae2de4b820312dd30af",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.134",
+  "dll_sha256": "b8b04aec04eac508502fd194b0139d5260ba764e053cf982154e44eb5b587810",
+  "injector_sha256": "f03283dc43e880cfc169ecd670ca2614908a76f56f5c758286accb3d3f6215db",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.135",
   "latest_features": [ 
-  "ContainerCloseTiming: Client First now uses SOURCE_TYPE_CONTAINER_DROP_CONTENTS so drop-before-close follows Nukkit top-window handling on supported windows",
-  "ContainerCloseTiming: drop replay is sent immediately and only the ContainerClose packet stays on the delay path",
-  "ContainerCloseTiming: the module no longer relies on delayed per-window slot-clear plus world-drop pairs for close timing tests",
-  "ContainerCloseTiming: permanent player inventories are skipped so drop-content targeting stays aligned with non-permanent open windows"
+  "ShulkerPreview: restored the stable preview module path so preview rendering stays available while the creator-style port lands",
+  "ShulkerPreview: the active runtime path now reads shulker item NBT through SDK/NBT/ShulkerNBT.h",
+  "SDK: Item now exposes rawname, name, and namespaceId fields needed by the shulker hover integration surface",
+  "HookManager: added AppendFormattedHoverTextHook and HoverRendererHook scaffold entries plus project wiring for the creator-style preview path"
 ]
 }
