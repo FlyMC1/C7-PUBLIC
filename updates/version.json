@@ -1,14 +1,14 @@
 {
-  "version": "2.0.135",
+  "version": "2.0.136",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "b8b04aec04eac508502fd194b0139d5260ba764e053cf982154e44eb5b587810",
-  "injector_sha256": "f03283dc43e880cfc169ecd670ca2614908a76f56f5c758286accb3d3f6215db",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.135",
+  "dll_sha256": "a80e780ef0abeae832733c12f0367b8501687761bea6208e54e7d06863cda8e9",
+  "injector_sha256": "d3b5dd0e549d75d3da5c6ddce2bdb60018f4f67439d097ef7c0689cb21a11ad6",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.136",
   "latest_features": [ 
-  "ShulkerPreview: restored the stable preview module path so preview rendering stays available while the creator-style port lands",
-  "ShulkerPreview: the active runtime path now reads shulker item NBT through SDK/NBT/ShulkerNBT.h",
-  "SDK: Item now exposes rawname, name, and namespaceId fields needed by the shulker hover integration surface",
-  "HookManager: added AppendFormattedHoverTextHook and HoverRendererHook scaffold entries plus project wiring for the creator-style preview path"
+  "ShulkerPreview: replaced the old D2D preview panel with the transfer bundle's lightweight hover-tooltip toggle module",
+  "ShulkerPreview: AppendFormattedHoverTextHook and HoverRendererHook are now the only active preview runtime path",
+  "Build/project: removed the temporary shulker hover scaffold header entries from the Visual Studio project metadata",
+  "Release: the tooltip-based shulker preview swap is now the shipped path instead of the earlier scaffolded fallback"
 ]
 }
