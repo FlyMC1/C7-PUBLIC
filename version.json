@@ -2,8 +2,8 @@
   "version": "2.0.138",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "24d4819e720dca3113fca10b0be73309590b736468cff27cb233763e811cfe98",
-  "injector_sha256": "706458f868787ee495f79dd7132ab166e5bfc30d279a3fb47a0cbc02f729b479",
+  "dll_sha256": "630957b4ea85283586d845357a7f64f5dba2bb47926dc5f0e52a1f805559dce6",
+  "injector_sha256": "cf91e93c4fcbb6b413e4d921826b9c1f6269b5b35febe4c6b5d15e8634b2a90b",
   "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.138",
   "latest_features": [ 
   "RMod: added replay session recording with saved block, actor, and camera capture bundles",
