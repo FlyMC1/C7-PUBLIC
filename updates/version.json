@@ -1,10 +1,10 @@
 {
-  "version": "2.0.139",
+  "version": "2.0.140",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "50be7777b50b9b9c99e7e54a649516b82fc82b8984fb391cc7b9610f618017fe",
-  "injector_sha256": "068f6275a10e8cf0d6c7e36470e873ea3f5f3e27f31cdec3f4b216700991e77c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.139",
+  "dll_sha256": "98e433fa70ce87f7ec5abb4a23408d3f8e5a8c1450855a1258d29ca4d737d5e8",
+  "injector_sha256": "a2946f31c8bbc80ebf2ac86082789851c00593f2dc09e9f93716397f9b421c07",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.140",
   "latest_features": [ 
   "RMod: added replay session recording with saved block, actor, and camera capture bundles",
   "RMod: added replay library browsing, playback controls, and export support for saved sessions",
@@ -18,6 +18,8 @@
   "Modules: implemented safe first-pass behaviors including inventory overlay, packet diagnostics, offhand refill guardrails, one-shot schematic load/save actions, comms packet mirroring, media HUD overlay, and legacy font-module coexistence",
   "Policy: set TransactionDupe and ShulkDub/ShulkDub1 as admin-only visibility while keeping other newly added modules public",
   "ShulkerDupe: imported and wired the standalone module implementation from grab as its own module entry",
-  "Policy: added explicit admin-only visibility for ShulkerDupe"
+  "Policy: added explicit admin-only visibility for ShulkerDupe",
+  "WhitelistManager: fixed module access fallback to honor allow_unlisted_access for modules missing from policy tables",
+  "Modules: restored visibility for categories like Combat when module names are absent from module_access keys"
 ]
 }
