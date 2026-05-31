@@ -1,10 +1,10 @@
 {
-  "version": "2.0.138",
+  "version": "2.0.139",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "630957b4ea85283586d845357a7f64f5dba2bb47926dc5f0e52a1f805559dce6",
-  "injector_sha256": "cf91e93c4fcbb6b413e4d921826b9c1f6269b5b35febe4c6b5d15e8634b2a90b",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.138",
+  "dll_sha256": "50be7777b50b9b9c99e7e54a649516b82fc82b8984fb391cc7b9610f618017fe",
+  "injector_sha256": "068f6275a10e8cf0d6c7e36470e873ea3f5f3e27f31cdec3f4b216700991e77c",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.139",
   "latest_features": [ 
   "RMod: added replay session recording with saved block, actor, and camera capture bundles",
   "RMod: added replay library browsing, playback controls, and export support for saved sessions",
@@ -16,6 +16,8 @@
   "ShulkerPreview: added grab-style hook naming compatibility via AppendFormatHook and HoverRenderHook aliases",
   "Modules: added InventoryViewer, TransactionDupe, OffhandExploit, SchematicSaver, SchematicLoader, Media, Comms, UnfocusedFps, and CustomFontModule",
   "Modules: implemented safe first-pass behaviors including inventory overlay, packet diagnostics, offhand refill guardrails, one-shot schematic load/save actions, comms packet mirroring, media HUD overlay, and legacy font-module coexistence",
-  "Policy: set TransactionDupe and ShulkDub/ShulkDub1 as admin-only visibility while keeping other newly added modules public"
+  "Policy: set TransactionDupe and ShulkDub/ShulkDub1 as admin-only visibility while keeping other newly added modules public",
+  "ShulkerDupe: imported and wired the standalone module implementation from grab as its own module entry",
+  "Policy: added explicit admin-only visibility for ShulkerDupe"
 ]
 }
