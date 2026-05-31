@@ -1,14 +1,21 @@
 {
-  "version": "2.0.137",
+  "version": "2.0.138",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5280e036815c85ef82109a37c40e390b4bebf0a179da0e072f375bcbfc715409",
-  "injector_sha256": "88d353b6c05623cac1468252da1aa30338ab381c907e01d8428672d5f11deea2",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.137",
+  "dll_sha256": "24d4819e720dca3113fca10b0be73309590b736468cff27cb233763e811cfe98",
+  "injector_sha256": "706458f868787ee495f79dd7132ab166e5bfc30d279a3fb47a0cbc02f729b479",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.138",
   "latest_features": [ 
-  "ContainerCloseTiming: added a dedicated Shulkers Last toggle for Client First drop-before-close tests",
-  "ContainerCloseTiming: regular container items now leave in earlier drop-content packets while shulker boxes are held for the trailing packets",
-  "ContainerCloseTiming: turning Shulkers Last off restores the old single-transaction drop-content replay behavior",
-  "ContainerCloseTiming: the shulker-last ordering still uses the Nukkit-compatible SOURCE_TYPE_CONTAINER_DROP_CONTENTS path"
+  "RMod: added replay session recording with saved block, actor, and camera capture bundles",
+  "RMod: added replay library browsing, playback controls, and export support for saved sessions",
+  "SchemBuild: added Auto Add placement mode with dedicated range, delay, and blocks-per-tick controls",
+  "ContainerCloseTiming: added preset-based container close deferral with outbound close delay and best-effort inbound close hold",
+  "Tick Test: added Back and Forward movement packet timing experiments for one-tick delay/prediction checks",
+  "ShulkerPreview: hardened container slot reads to prevent preview render dropouts when invalid slots are probed",
+  "Policy: enabled ShulkerPreview for admin access and enabled Watermark in public module access",
+  "ShulkerPreview: added grab-style hook naming compatibility via AppendFormatHook and HoverRenderHook aliases",
+  "Modules: added InventoryViewer, TransactionDupe, OffhandExploit, SchematicSaver, SchematicLoader, Media, Comms, UnfocusedFps, and CustomFontModule",
+  "Modules: implemented safe first-pass behaviors including inventory overlay, packet diagnostics, offhand refill guardrails, one-shot schematic load/save actions, comms packet mirroring, media HUD overlay, and legacy font-module coexistence",
+  "Policy: set TransactionDupe and ShulkDub/ShulkDub1 as admin-only visibility while keeping other newly added modules public"
 ]
 }
