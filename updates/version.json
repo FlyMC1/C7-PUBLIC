@@ -1,10 +1,10 @@
 {
-  "version": "2.0.155",
+  "version": "2.0.156",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "7733848fbfd24b56513ee17c5c3ed40f9f5d9369378ffa034f046ee433b74f47",
-  "injector_sha256": "ac2a360c995c2b34ea582fde4c3ef01325915b891fe0d672674d7f5f5665a283",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.155",
+  "dll_sha256": "689275b6ebb660fab7979122730b6ee73314b626899b0498087824620ef77488",
+  "injector_sha256": "c8fab9eb7c574d1d4df5252bd036f08ed61b3ead73dcd2d6be06f3dfa42eba91",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.156",
   "latest_features": [ 
   "ContainerCloseTiming: added a dedicated Shulkers Last toggle for Client First drop-before-close tests",
   "ContainerCloseTiming: regular container items now leave in earlier drop-content packets while shulker boxes are held for the trailing packets",
