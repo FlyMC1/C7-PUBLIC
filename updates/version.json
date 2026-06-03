@@ -1,14 +1,14 @@
 {
-  "version": "2.0.164",
+  "version": "2.0.165",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "01fed66e3f8041a5689cca633b09a5a4ffc2097f31834231d5e4bf651570beba",
-  "injector_sha256": "61c4797291b528a12369bf8ace4d83fac0f05bf69c0d7a2d9907da27f13aa8eb",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.164",
+  "dll_sha256": "ae0174bfb4aeeddde53640f2b7de65387e7dec0151fd6e8daa349902e06a3c4a",
+  "injector_sha256": "7e11991adaca1be805f684989ede84b3094c884a10a255a1338e59a612dc9447",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.165",
   "latest_features": [
-  "Rebuilt Schembuild rendering into a single textured geometry pipeline with focused layer swish transitions",
-  "Redesigned the Schembuild tab into dedicated workspace, build state, and materials/replacement sections",
-  "Added strict-by-default placement inventory behavior with optional aggressive pull from inventory",
-  "Reset Schembuild project profiles to schemaVersion 2 for clean state loading and deterministic settings restore"
+  "Fixed injector DLL hash verification failures by accepting both decrypted DLL hashes and legacy package hashes",
+  "Hardened encrypted C7.dll.pkg verification flow to prevent false negative update blocks during injection",
+  "Improved Schembuild texture miss detection to reject purple/black placeholder textures reliably",
+  "Added texture miss cache invalidation so failed keys do not repeatedly render checker placeholders"
 ]
 }
