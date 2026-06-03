@@ -1,14 +1,14 @@
 {
-  "version": "2.0.163",
+  "version": "2.0.164",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "72cd5f8af4a4f4b80d3c0264d87dc56f249f1a86dccbb55815e0432eb4e5e957",
-  "injector_sha256": "9d1c70c0fd368d3dbff6e19c935468fd2c814960444611c03e4134d2758817c2",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.163",
+  "dll_sha256": "45800364dffc4e1c088db729e336091d080aefc8008408691298a5b1ad7d6da3",
+  "injector_sha256": "25b2827d5578a937f5f1eebe33022b8c3fba614ac66d1b06bdc2fe6f71efe2ec",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.164",
   "latest_features": [
-  "Hardened injector DLL update fallback so stale latest assets cannot bypass manifest SHA checks",
-  "Added injector self-update fallback to the mirrored raw updates path when latest release asset hash mismatches",
-  "Public release asset upload now uses clobber to replace stale same-tag assets on reruns",
-  "Mirror-to-public workflow now initiates from successful Build C7 Release runs"
+  "Rebuilt Schembuild rendering into a single textured geometry pipeline with focused layer swish transitions",
+  "Redesigned the Schembuild tab into dedicated workspace, build state, and materials/replacement sections",
+  "Added strict-by-default placement inventory behavior with optional aggressive pull from inventory",
+  "Reset Schembuild project profiles to schemaVersion 2 for clean state loading and deterministic settings restore"
 ]
 }
