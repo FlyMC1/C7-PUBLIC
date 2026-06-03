@@ -2,8 +2,8 @@
   "version": "2.0.164",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "45800364dffc4e1c088db729e336091d080aefc8008408691298a5b1ad7d6da3",
-  "injector_sha256": "25b2827d5578a937f5f1eebe33022b8c3fba614ac66d1b06bdc2fe6f71efe2ec",
+  "dll_sha256": "01fed66e3f8041a5689cca633b09a5a4ffc2097f31834231d5e4bf651570beba",
+  "injector_sha256": "61c4797291b528a12369bf8ace4d83fac0f05bf69c0d7a2d9907da27f13aa8eb",
   "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.164",
   "latest_features": [
   "Rebuilt Schembuild rendering into a single textured geometry pipeline with focused layer swish transitions",
