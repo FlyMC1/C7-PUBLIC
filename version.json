@@ -1,14 +1,14 @@
 {
-  "version": "2.0.157",
+  "version": "2.0.162",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "6cecc9ba0779135ed5c3e72b44d642b9800f54b560b066d36559fcf6b85ae3a3",
-  "injector_sha256": "ad3e760553c673358062aa92b47d0bd8dbfcd4ea4d5384cf66e798923e0353ee",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.157",
-  "latest_features": [ 
-  "ContainerCloseTiming: added a dedicated Shulkers Last toggle for Client First drop-before-close tests",
-  "ContainerCloseTiming: regular container items now leave in earlier drop-content packets while shulker boxes are held for the trailing packets",
-  "ContainerCloseTiming: turning Shulkers Last off restores the old single-transaction drop-content replay behavior",
-  "ContainerCloseTiming: the shulker-last ordering still uses the Nukkit-compatible SOURCE_TYPE_CONTAINER_DROP_CONTENTS path"
+  "dll_sha256": "fb6f553406f21c2927b0b1a2867494c9cb66ed582f3c3108fe852074f72d5615",
+  "injector_sha256": "14c94409de9b7fa65729061c246929b5deaadb8376b716f361fbf407c8511e5c",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.162",
+  "latest_features": [
+  "Fixed Release x64 linker unresolved externals by guarding ModuleManager registrations for modules excluded from that build profile",
+  "Excluded UnfocusedFPS WinRT module from Release x64 to avoid unresolved WinRT runtime symbols",
+  "Kept required release asset attachment patterns for mirror workflow compatibility",
+  "Prepared CI follow-up release metadata for v2.0.162"
 ]
 }
