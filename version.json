@@ -1,14 +1,14 @@
 {
-  "version": "2.0.162",
+  "version": "2.0.163",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "fb6f553406f21c2927b0b1a2867494c9cb66ed582f3c3108fe852074f72d5615",
-  "injector_sha256": "14c94409de9b7fa65729061c246929b5deaadb8376b716f361fbf407c8511e5c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.162",
+  "dll_sha256": "72cd5f8af4a4f4b80d3c0264d87dc56f249f1a86dccbb55815e0432eb4e5e957",
+  "injector_sha256": "9d1c70c0fd368d3dbff6e19c935468fd2c814960444611c03e4134d2758817c2",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.163",
   "latest_features": [
-  "Fixed Release x64 linker unresolved externals by guarding ModuleManager registrations for modules excluded from that build profile",
-  "Excluded UnfocusedFPS WinRT module from Release x64 to avoid unresolved WinRT runtime symbols",
-  "Kept required release asset attachment patterns for mirror workflow compatibility",
-  "Prepared CI follow-up release metadata for v2.0.162"
+  "Hardened injector DLL update fallback so stale latest assets cannot bypass manifest SHA checks",
+  "Added injector self-update fallback to the mirrored raw updates path when latest release asset hash mismatches",
+  "Public release asset upload now uses clobber to replace stale same-tag assets on reruns",
+  "Mirror-to-public workflow now initiates from successful Build C7 Release runs"
 ]
 }
