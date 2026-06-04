@@ -1,14 +1,14 @@
 {
-  "version": "2.0.167",
+  "version": "2.0.168",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5a93ac6808b48c00c2703530a2c6ba616be23caea756f3675eb896c219f1c52a",
-  "injector_sha256": "292fc1ac3c8b10a4d5d1e6fbca088d6890a40c13e387f96998867d31d19eda58",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.167",
+  "dll_sha256": "893d2ad19bbea997e702636bc28fa12ab71c9488c09f98b57b7026770b8c5e80",
+  "injector_sha256": "2a0ad9fcf5164fe811ee8a64745ba050d2754e26255489412baac45c5426f62a",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.168",
   "latest_features": [ 
-  "Added new admin-only Player module ResourcePackChunkFlood",
-  "ResourcePackChunkFlood auto-captures pack UUID from incoming ResourcePackDataInfo packets",
-  "ResourcePackChunkFlood sends configurable bursts of up to 4096 unique chunk index requests per tick",
-  "Integrated ResourcePackChunkFlood into release/runtime policy gates for admin-only visibility"
+  "Added live .rpf command controls for ResourcePackChunkFlood manual UUID workflows",
+  "ResourcePackChunkFlood now supports runtime manual UUID set/clear and manual mode toggling",
+  "Improved UUID capture reliability with ResourcePackChunkData fallback capture path",
+  "Added config persistence hooks for ResourcePackChunkFlood ManualUUID override"
 ]
 }
