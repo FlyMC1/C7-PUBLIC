@@ -1,14 +1,14 @@
 {
-  "version": "2.0.165",
+  "version": "2.0.166",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ae0174bfb4aeeddde53640f2b7de65387e7dec0151fd6e8daa349902e06a3c4a",
-  "injector_sha256": "7e11991adaca1be805f684989ede84b3094c884a10a255a1338e59a612dc9447",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.165",
-  "latest_features": [
-  "Fixed injector DLL hash verification failures by accepting both decrypted DLL hashes and legacy package hashes",
-  "Hardened encrypted C7.dll.pkg verification flow to prevent false negative update blocks during injection",
-  "Improved Schembuild texture miss detection to reject purple/black placeholder textures reliably",
-  "Added texture miss cache invalidation so failed keys do not repeatedly render checker placeholders"
+  "dll_sha256": "283ab21b719c55a36e12eda4738394002cc7bcd23fd7fba9c7f9a611cfcf9417",
+  "injector_sha256": "94130d08d8da1ebad9efaff261f233b98c9587664eb6d93cb9fd17d42d9c7340",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.166",
+  "latest_features": [ 
+  "Added new admin-only Player module InventoryActionBurst",
+  "InventoryActionBurst can send configurable inventory packet bursts from 1 to 100 packets per tick",
+  "Each InventoryActionBurst packet supports up to 4096 mini-actions with customizable slot sets and payload templates",
+  "Integrated InventoryActionBurst into release/runtime policy gates for admin-only visibility"
 ]
 }
