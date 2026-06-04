@@ -1,14 +1,14 @@
 {
-  "version": "2.0.166",
+  "version": "2.0.167",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "283ab21b719c55a36e12eda4738394002cc7bcd23fd7fba9c7f9a611cfcf9417",
-  "injector_sha256": "94130d08d8da1ebad9efaff261f233b98c9587664eb6d93cb9fd17d42d9c7340",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.166",
+  "dll_sha256": "5a93ac6808b48c00c2703530a2c6ba616be23caea756f3675eb896c219f1c52a",
+  "injector_sha256": "292fc1ac3c8b10a4d5d1e6fbca088d6890a40c13e387f96998867d31d19eda58",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.167",
   "latest_features": [ 
-  "Added new admin-only Player module InventoryActionBurst",
-  "InventoryActionBurst can send configurable inventory packet bursts from 1 to 100 packets per tick",
-  "Each InventoryActionBurst packet supports up to 4096 mini-actions with customizable slot sets and payload templates",
-  "Integrated InventoryActionBurst into release/runtime policy gates for admin-only visibility"
+  "Added new admin-only Player module ResourcePackChunkFlood",
+  "ResourcePackChunkFlood auto-captures pack UUID from incoming ResourcePackDataInfo packets",
+  "ResourcePackChunkFlood sends configurable bursts of up to 4096 unique chunk index requests per tick",
+  "Integrated ResourcePackChunkFlood into release/runtime policy gates for admin-only visibility"
 ]
 }
