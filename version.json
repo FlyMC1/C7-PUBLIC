@@ -1,14 +1,14 @@
 {
-  "version": "2.0.172",
+  "version": "2.0.173",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "9a6c6cb0149fed44075fd1b50e3fc25f3b6ccbc45144ef2fdf193a4d942d2ad3",
-  "injector_sha256": "faa0e46818adebb3a6ce17af34cd963417e8667145a17d90620c16354facc29d",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.172",
+  "dll_sha256": "33299c0915bc81b73d3c9a855bb2f6cb3b2b721f37cbfed1b450e1b1c5732f50",
+  "injector_sha256": "1dfed8aa349a58460ef7596862f8ea892a6fc7721360eed3b4078eb4cb1ae7a0",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.173",
   "latest_features": [ 
-  "InventoryActionBurst adds TickBursts to run multiple burst cycles per normal game tick",
-  "PacketHookAmplify can now trigger extra bursts from PlayerAuthInput and MovePlayer packet flow",
-  "HookBurstCap limits hook-triggered burst amplification per tick to keep pressure bounded",
-  "Packets setting expanded to 800 and burst scheduling now supports stacked tick plus packet-hook dispatch"
+  "InventoryActionBurst ForceFailNormal now guarantees mismatch payloads by sourcing a real non-empty stack",
+  "ForceFailNormal automatically falls back to MismatchFlood when inventory is fully empty",
+  "DropFlood now falls back to MismatchFlood when the player has no carried item to prevent low-impact dispatch",
+  "InventoryActionBurst defaults and mode text were aligned for stronger out-of-box pressure"
 ]
 }
