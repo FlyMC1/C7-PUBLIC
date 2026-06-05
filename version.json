@@ -1,14 +1,14 @@
 {
-  "version": "2.0.170",
+  "version": "2.0.171",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "2f47958fb59b2a0476d3e62b154caf1cb7a18eae442d957e168ce74c0ad4ba63",
-  "injector_sha256": "c66cc82296fac47fd2e4e9bc9fb9218a8a4605a55e5b29ee027e98a706ebb5e5",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.170",
+  "dll_sha256": "b07c4c98c085cde3555895bc589786cdb8cede88229b92a8239ee8049b8f18be",
+  "injector_sha256": "054ad46a17d0c59fc0edbc121d34118733fc354357e09abc8d48418c35261e23",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.171",
   "latest_features": [ 
-  "Auto Basehunt remember-path resume now restores the exact last saved coordinate before continuing route execution",
-  "ResourcePackChunkFlood now supports Sequential, Strided, and Wave chunk request patterns with configurable auto-advancing offsets",
-  "InventoryActionBurst now mirrors real slot payloads with flip-direction and slot-stride churn for stronger transaction variation",
-  "SchemBuild injector-selected file loading now retries reliably until success and initializes fallback anchoring to restore ghost rendering"
+  "InventoryActionBurst rewritten with three Nukkit-targeted modes: MismatchFlood, ForceFailNormal, DropFlood",
+  "MismatchFlood sends TYPE_MISMATCH packets forcing a full server inventory resync per packet",
+  "ForceFailNormal sends TYPE_NORMAL with inverted fromItem values to exhaust server matchItems() validation",
+  "DropFlood uses WorldInteraction source to trigger DropItemAction entity spawns on the server per action"
 ]
 }
