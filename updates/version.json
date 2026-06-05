@@ -1,14 +1,14 @@
 {
-  "version": "2.0.168",
+  "version": "2.0.169",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "893d2ad19bbea997e702636bc28fa12ab71c9488c09f98b57b7026770b8c5e80",
-  "injector_sha256": "2a0ad9fcf5164fe811ee8a64745ba050d2754e26255489412baac45c5426f62a",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.168",
+  "dll_sha256": "d9dd79fc1d5bf94afe01f9e661187f210d718b3a7c5c8c0ceb5d23c388682655",
+  "injector_sha256": "de42d53354f88d135b8407d121b1f4d54bb565d14e3668b1a55a79cc309ca0d4",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.169",
   "latest_features": [ 
-  "Added live .rpf command controls for ResourcePackChunkFlood manual UUID workflows",
-  "ResourcePackChunkFlood now supports runtime manual UUID set/clear and manual mode toggling",
-  "Improved UUID capture reliability with ResourcePackChunkData fallback capture path",
-  "Added config persistence hooks for ResourcePackChunkFlood ManualUUID override"
+  "Replaced Auto Basehunt slot-based block selection with fixed target toggles under Search Targets",
+  "Added category detection for single chest, double chest, trapped chest, all shulker colors, beds, and ender chest",
+  "Webhook alerts now post Discord embeds with detected target details and coordinates",
+  "Added Auto Basehunt webhook debug output and legacy slot config key migration cleanup"
 ]
 }
