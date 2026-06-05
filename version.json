@@ -1,14 +1,14 @@
 {
-  "version": "2.0.171",
+  "version": "2.0.172",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "b07c4c98c085cde3555895bc589786cdb8cede88229b92a8239ee8049b8f18be",
-  "injector_sha256": "054ad46a17d0c59fc0edbc121d34118733fc354357e09abc8d48418c35261e23",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.171",
+  "dll_sha256": "9a6c6cb0149fed44075fd1b50e3fc25f3b6ccbc45144ef2fdf193a4d942d2ad3",
+  "injector_sha256": "faa0e46818adebb3a6ce17af34cd963417e8667145a17d90620c16354facc29d",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.172",
   "latest_features": [ 
-  "InventoryActionBurst rewritten with three Nukkit-targeted modes: MismatchFlood, ForceFailNormal, DropFlood",
-  "MismatchFlood sends TYPE_MISMATCH packets forcing a full server inventory resync per packet",
-  "ForceFailNormal sends TYPE_NORMAL with inverted fromItem values to exhaust server matchItems() validation",
-  "DropFlood uses WorldInteraction source to trigger DropItemAction entity spawns on the server per action"
+  "InventoryActionBurst adds TickBursts to run multiple burst cycles per normal game tick",
+  "PacketHookAmplify can now trigger extra bursts from PlayerAuthInput and MovePlayer packet flow",
+  "HookBurstCap limits hook-triggered burst amplification per tick to keep pressure bounded",
+  "Packets setting expanded to 800 and burst scheduling now supports stacked tick plus packet-hook dispatch"
 ]
 }
