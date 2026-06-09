@@ -1,14 +1,14 @@
 {
-  "version": "2.0.179",
+  "version": "2.0.180",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "f57b4b4a71c0602f5da47bbbedcb228691cd9c2de20cf4ac8bab27d25ffb03b9",
-  "injector_sha256": "f9a1253f45ab9c6326ce9b625faec6be4470c01a53608390115b0b915d3dacc9",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.179",
+  "dll_sha256": "a50c6b39072ae033dc21b8e7c415f3a6f128543cfce2710b0dfa037b6e01a32f",
+  "injector_sha256": "16f60f45077d28d9e22a924f6e18b1f7d923dc3c541054db554317006513725c",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.180",
   "latest_features": [ 
-  "AutoFly adds Relative Height mode and now hard-caps vertical targeting to current Y plus 400",
-  "Auto Basehunt height offset now supports up to 400 blocks and clamps flight altitude to current Y plus 400",
-  "Auto Basehunt spiral tracer now begins at the real player position and follows the intended path preview",
-  "InventoryActionBurst streamlines mode set and fallback behavior for more consistent pressure across server forks"
+  "Auto Basehunt now flies a straight forward path along the player's heading instead of a square spiral",
+  "Auto Basehunt height now stays within the 0 to 400 Y range and clamps motion to the configured loaded distance",
+  "Auto Basehunt tracer now draws a single cleaner forward polyline from the player position",
+  "AutoFly Relative Height mode and the latest InventoryActionBurst cleanup remain in the release set"
 ]
 }
