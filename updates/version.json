@@ -1,14 +1,14 @@
 {
-  "version": "2.0.178",
+  "version": "2.0.179",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "49aa4c85c4cdba35c65b4b1efec954d6362ebcb3b4940b3076010ab8a2012b94",
-  "injector_sha256": "ddd2590cf014447efa2d56a2912b09e03da5977cbedd4f66facfcd2b285f7a9b",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.178",
-  "latest_features": [
-  "Fixed release build linker failure by restoring ResourcePackChunkFloodCommand.cpp in project compile inputs",
-  "Build C7 Release workflow now resolves ResourcePackChunkFloodCommand constructor symbol correctly",
-  "Release packaging path now proceeds past link stage for tagged builds",
-  "Hotfix release focuses on CI/build stability with no gameplay behavior changes"
+  "dll_sha256": "f57b4b4a71c0602f5da47bbbedcb228691cd9c2de20cf4ac8bab27d25ffb03b9",
+  "injector_sha256": "f9a1253f45ab9c6326ce9b625faec6be4470c01a53608390115b0b915d3dacc9",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.179",
+  "latest_features": [ 
+  "AutoFly adds Relative Height mode and now hard-caps vertical targeting to current Y plus 400",
+  "Auto Basehunt height offset now supports up to 400 blocks and clamps flight altitude to current Y plus 400",
+  "Auto Basehunt spiral tracer now begins at the real player position and follows the intended path preview",
+  "InventoryActionBurst streamlines mode set and fallback behavior for more consistent pressure across server forks"
 ]
 }
