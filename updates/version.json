@@ -1,14 +1,14 @@
 {
-  "version": "2.0.180",
+  "version": "2.0.181",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "a50c6b39072ae033dc21b8e7c415f3a6f128543cfce2710b0dfa037b6e01a32f",
-  "injector_sha256": "16f60f45077d28d9e22a924f6e18b1f7d923dc3c541054db554317006513725c",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.180",
-  "latest_features": [ 
-  "Auto Basehunt now flies a straight forward path along the player's heading instead of a square spiral",
-  "Auto Basehunt height now stays within the 0 to 400 Y range and clamps motion to the configured loaded distance",
-  "Auto Basehunt tracer now draws a single cleaner forward polyline from the player position",
-  "AutoFly Relative Height mode and the latest InventoryActionBurst cleanup remain in the release set"
+  "dll_sha256": "d5d16285dc39d636a39e759ae68daa974fccfe43ec6397878d45671bb7e535df",
+  "injector_sha256": "163b054f283f7fcd372cde9a4211b0a2e684511c5250dbd3c645100112214626",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.181",
+  "latest_features": [
+  "Access policy admin whitelist now includes HWID a600208b-40a2-11ef-bee8-806e6f6e6963",
+  "Hardcoded admin HWID fallback now includes a600208b-40a2-11ef-bee8-806e6f6e6963",
+  "Access policy revision bumped to 25 with updated_at set to 2026-06-10",
+  "Release metadata aligned for v2.0.181"
 ]
 }
