@@ -1,14 +1,14 @@
 {
-  "version": "2.0.185",
+  "version": "2.0.186",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "397db8131799e4f5797723f3abd0301dbe73173c707e919311b6923d335d1a0a",
-  "injector_sha256": "32f5e2c95975a1835c60f2998c60a34b4edfa4fafab952e805c882bef611c384",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.185",
+  "dll_sha256": "2ed1074fd130b8fb936f3d166131b4b8b1d93ed9fc48664dd0ed593ced22ec8c",
+  "injector_sha256": "7d6c55710689d50b5dd7dae9f387d2bc850a3f7151dac7d1ad07d313578e2492",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.186",
   "latest_features": [
-  "Reworked Auto Basehunt travel to a persistent outward square-spiral route",
-  "Added heading-snapped spiral direction and left-turn leg expansion with spacing control",
-  "Improved upward gradient climb behavior to stabilize jetpack ascent up to Y=400 clamp",
-  "Resume path progress now continues reliably from saved point and direction state"
+  "Added packet-safe flight mode for Nukkit-based servers to prevent world-load stall",
+  "Added slow-ramp takeoff and resume phase so server chunk queue is not outrun from ground",
+  "Added burst/coast cycle to throttle forward travel and allow chunk delivery to recover",
+  "Altitude-aware speed governor reduces horizontal speed while far below target Y"
 ]
 }
