@@ -1,14 +1,14 @@
 {
-  "version": "2.0.184",
+  "version": "2.0.185",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "08c00a20c7e03eefb98dc5df8750991aca6a41b4e6404cde34e6a1305d99bbbf",
-  "injector_sha256": "37190324cc9569a2f28d60e744ef7cd93a23f9c9656658281ca7bec386278bf7",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.184",
+  "dll_sha256": "397db8131799e4f5797723f3abd0301dbe73173c707e919311b6923d335d1a0a",
+  "injector_sha256": "32f5e2c95975a1835c60f2998c60a34b4edfa4fafab952e805c882bef611c384",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.185",
   "latest_features": [
-  "Implemented missing Auto Basehunt named plan methods referenced by Basehunt command flow",
-  "Added create/delete/reset/save-active/list method definitions to resolve linker unresolved externals",
-  "Resolved v2.0.183 build failure caused by missing AutoBasehunt method implementations",
-  "Release metadata aligned for v2.0.184"
+  "Reworked Auto Basehunt travel to a persistent outward square-spiral route",
+  "Added heading-snapped spiral direction and left-turn leg expansion with spacing control",
+  "Improved upward gradient climb behavior to stabilize jetpack ascent up to Y=400 clamp",
+  "Resume path progress now continues reliably from saved point and direction state"
 ]
 }
