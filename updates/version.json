@@ -1,10 +1,10 @@
 {
-  "version": "2.0.186",
+  "version": "2.0.187",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "2ed1074fd130b8fb936f3d166131b4b8b1d93ed9fc48664dd0ed593ced22ec8c",
-  "injector_sha256": "7d6c55710689d50b5dd7dae9f387d2bc850a3f7151dac7d1ad07d313578e2492",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.186",
+  "dll_sha256": "9a590eb48a36d9b2933a185cd026cd318751c7408f3f70b52bfebc441483c17d",
+  "injector_sha256": "b8de7172b09fd131a8b1495969261e701be3504583a9764584fdeed026352c7a",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.187",
   "latest_features": [
   "Added packet-safe flight mode for Nukkit-based servers to prevent world-load stall",
   "Added slow-ramp takeoff and resume phase so server chunk queue is not outrun from ground",
