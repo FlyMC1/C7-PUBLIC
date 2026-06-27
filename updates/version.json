@@ -1,14 +1,14 @@
 {
-  "version": "2.0.187",
+  "version": "2.0.188",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "9a590eb48a36d9b2933a185cd026cd318751c7408f3f70b52bfebc441483c17d",
-  "injector_sha256": "b8de7172b09fd131a8b1495969261e701be3504583a9764584fdeed026352c7a",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.187",
+  "dll_sha256": "12c2b669d9aa3c2ff105cf65602a1e9d43b7fedf950c39b538bc72e9bb87f817",
+  "injector_sha256": "35b7be26d36abea69f27b85a2cdcbadfd44ae23c0342ce1d7b098de92d53c9bc",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.188",
   "latest_features": [
-  "Added packet-safe flight mode for Nukkit-based servers to prevent world-load stall",
-  "Added slow-ramp takeoff and resume phase so server chunk queue is not outrun from ground",
-  "Added burst/coast cycle to throttle forward travel and allow chunk delivery to recover",
-  "Altitude-aware speed governor reduces horizontal speed while far below target Y"
+  "Improved AutoBasehunt circular spiral pathing with smoother outward checkpoint progression",
+  "Reduced abrupt turn behavior with tighter arc step sizing for more stable long flights",
+  "Added velocity blending and post-blend speed clamping to reduce wobble and overshoot",
+  "Added first-time AutoBasehunt player guide with complete command reference in C7-master"
 ]
 }
