@@ -1,14 +1,14 @@
 {
-  "version": "2.0.188",
+  "version": "2.0.189",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "12c2b669d9aa3c2ff105cf65602a1e9d43b7fedf950c39b538bc72e9bb87f817",
-  "injector_sha256": "35b7be26d36abea69f27b85a2cdcbadfd44ae23c0342ce1d7b098de92d53c9bc",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.188",
+  "dll_sha256": "31c567e7e34684a4655da27c148890f852b7a2f3fca45932f2ada1bccb47c4a0",
+  "injector_sha256": "6892524f80334b75c9248c60ffee964b58d625b15bb5643a9fca4229692fff87",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.189",
   "latest_features": [
-  "Improved AutoBasehunt circular spiral pathing with smoother outward checkpoint progression",
-  "Reduced abrupt turn behavior with tighter arc step sizing for more stable long flights",
-  "Added velocity blending and post-blend speed clamping to reduce wobble and overshoot",
-  "Added first-time AutoBasehunt player guide with complete command reference in C7-master"
+  "Fixed AutoBasehunt movement engagement when waypoint distance is meaningful but thrust collapses near zero",
+  "Added minimum forward thrust safeguard to keep route motion active toward the current checkpoint",
+  "Improved frontier handoff fallback so nearby frontier targets continue circular spiral progression",
+  "Improved reliability of outward circular spiral continuation after returning near origin"
 ]
 }
