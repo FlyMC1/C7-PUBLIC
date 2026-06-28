@@ -1,14 +1,13 @@
 {
-  "version": "2.0.189",
+  "version": "2.0.190",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "31c567e7e34684a4655da27c148890f852b7a2f3fca45932f2ada1bccb47c4a0",
-  "injector_sha256": "6892524f80334b75c9248c60ffee964b58d625b15bb5643a9fca4229692fff87",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.189",
+  "dll_sha256": "7654f9109ab93dab44da08bfba302341f1ec6126549667a8ab2d7aa54a5435dc",
+  "injector_sha256": "46172765993ae6cd98ccf7b948750a7a5b6ddd8edcd7bee3b59b8265a3a77624",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.190",
   "latest_features": [
-  "Fixed AutoBasehunt movement engagement when waypoint distance is meaningful but thrust collapses near zero",
-  "Added minimum forward thrust safeguard to keep route motion active toward the current checkpoint",
-  "Improved frontier handoff fallback so nearby frontier targets continue circular spiral progression",
-  "Improved reliability of outward circular spiral continuation after returning near origin"
+  "Added Scaffold Auto Replenish to keep hotbar slot 9 stocked with placeable blocks while building",
+  "Scaffold now automatically pulls replacement block stacks from inventory or other hotbar slots when needed",
+  "Scaffold Auto Replenish filters out container blocks so they are never used as placeable scaffold stock"
 ]
 }
