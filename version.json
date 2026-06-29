@@ -1,13 +1,13 @@
 {
-  "version": "2.0.190",
+  "version": "2.0.191",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "7654f9109ab93dab44da08bfba302341f1ec6126549667a8ab2d7aa54a5435dc",
-  "injector_sha256": "46172765993ae6cd98ccf7b948750a7a5b6ddd8edcd7bee3b59b8265a3a77624",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.190",
+  "dll_sha256": "cc70c58de9050685e5bb6878324dae1800430842c334c8e40d8c11a65919fcd8",
+  "injector_sha256": "88400f41823fdb222a38795c84fa3cd5ab0e7fdd57ffb4228be8e61fffd18f31",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.191",
   "latest_features": [
-  "Added Scaffold Auto Replenish to keep hotbar slot 9 stocked with placeable blocks while building",
-  "Scaffold now automatically pulls replacement block stacks from inventory or other hotbar slots when needed",
-  "Scaffold Auto Replenish filters out container blocks so they are never used as placeable scaffold stock"
+  "Notifications+ now supports a curved GUI-aligned popup design with upward pop animation",
+  "Notifications+ can replace and overlap the previous module-toggle popup instead of stacking",
+  "Arraylist now includes a 0.5x-5.0x size setting, additional styles, and expanded client-popular font choices"
 ]
 }
