@@ -1,13 +1,13 @@
 {
-  "version": "2.0.191",
+  "version": "2.0.192",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "cc70c58de9050685e5bb6878324dae1800430842c334c8e40d8c11a65919fcd8",
-  "injector_sha256": "88400f41823fdb222a38795c84fa3cd5ab0e7fdd57ffb4228be8e61fffd18f31",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.191",
+  "dll_sha256": "c36d86fd53e4f8c8fba4d0f369ddeb2454c16e4ab1b2165ff214ac95eaa5fd57",
+  "injector_sha256": "bac13f860a92498e152f4fe6f2c3eadd6b06547337b4f3c93a3ffc9f8bd6f1eb",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.192",
   "latest_features": [
-  "Notifications+ now supports a curved GUI-aligned popup design with upward pop animation",
-  "Notifications+ can replace and overlap the previous module-toggle popup instead of stacking",
-  "Arraylist now includes a 0.5x-5.0x size setting, additional styles, and expanded client-popular font choices"
+  "SchemBuild is back on simplified shaded ghost blocks with steadier layer-by-layer automation and local-only progress messaging",
+  "SchemBuild now stages required materials through the last hotbar slot, refills from inventory, and supports live schematic-wide block replacement commands",
+  "Public access policy now exposes the remaining gated modules and the hardcoded fallback mirrors the same visibility"
 ]
 }
