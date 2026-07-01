@@ -1,13 +1,13 @@
 {
-  "version": "2.0.192",
+  "version": "2.0.193",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "c36d86fd53e4f8c8fba4d0f369ddeb2454c16e4ab1b2165ff214ac95eaa5fd57",
-  "injector_sha256": "bac13f860a92498e152f4fe6f2c3eadd6b06547337b4f3c93a3ffc9f8bd6f1eb",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.192",
-  "latest_features": [
-  "SchemBuild is back on simplified shaded ghost blocks with steadier layer-by-layer automation and local-only progress messaging",
-  "SchemBuild now stages required materials through the last hotbar slot, refills from inventory, and supports live schematic-wide block replacement commands",
-  "Public access policy now exposes the remaining gated modules and the hardcoded fallback mirrors the same visibility"
+  "dll_sha256": "4be4053f79db65afae52711107b81a4e94f76efc231f39e6ee6e7757d26622c0",
+  "injector_sha256": "cf1c8ea774ba827593fbe6e8e84b9d210dafc36532ffe345789f0047f27f2eff",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.193",
+  "latest_features": [ 
+  "SchemBuild single-layer mode now renders only the active layer, removing the stray whole-build outline artifacts",
+  "New Render Limit Full/Layer settings let you tune low/high ghost display budgets for performance and visibility",
+  "SchemBuild block substitution now matches inventory more reliably and adds '.schembuild replace all <targetBlock>' plus Pulse/Solid outline mode"
 ]
 }
