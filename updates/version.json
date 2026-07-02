@@ -1,13 +1,13 @@
 {
-  "version": "2.0.193",
+  "version": "2.0.194",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "4be4053f79db65afae52711107b81a4e94f76efc231f39e6ee6e7757d26622c0",
-  "injector_sha256": "cf1c8ea774ba827593fbe6e8e84b9d210dafc36532ffe345789f0047f27f2eff",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.193",
+  "dll_sha256": "e7e89ab63cfbf6f74b63b47c87f79d4d19078db23d4079ffcc0566b371a91a2a",
+  "injector_sha256": "d97ea8f09c01dd231423a594d16e1422052d8f4e0f96194d99162ebb189d2a5f",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.194",
   "latest_features": [ 
-  "SchemBuild single-layer mode now renders only the active layer, removing the stray whole-build outline artifacts",
-  "New Render Limit Full/Layer settings let you tune low/high ghost display budgets for performance and visibility",
-  "SchemBuild block substitution now matches inventory more reliably and adds '.schembuild replace all <targetBlock>' plus Pulse/Solid outline mode"
+  "SchemBuild now supports '.schembuild anchor', '.schembuild save <name>', and '.schembuild load <name>' for centered override anchoring and resumable build locations",
+  "Dot-command typing assist is now live in chat with suggestions, Up/Down selection, and Tab commit while preserving command arguments",
+  "Injector now auto-installs supported packs from the bundled 'to add' folder and enables them by default in Bedrock global resource packs on injection"
 ]
 }
