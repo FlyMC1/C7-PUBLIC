@@ -1,13 +1,13 @@
 {
-  "version": "2.0.197",
+  "version": "2.0.198",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "1ea1ea1052d48c15ba0a3104f70a58928fdd504f1f14862e01881677cef2b2c4",
-  "injector_sha256": "c565a0dc58689a5590b7797bc6eca9720c5d14375f84d584c22796b73e2dcf64",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.197",
+  "dll_sha256": "ae428660c21519f5a2db03d5d098ca2f9f6a255b20d1a420fefd47127e0bfd88",
+  "injector_sha256": "aa3822402f04758a5cf2dda62f4cbedbbd3250df0e396b9b9d616088565d0bb6",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.198",
   "latest_features": [ 
-  "Hotfix: reverted unintended SchemBuild runtime regression from the prior release that could destabilize inject/startup",
-  "Shulker preview fallback now avoids fragile Item memory-layout field reads and uses safer NBT-shape checks for better 1.21.2.2 compatibility",
-  "Inject/start compatibility hardened for recent Bedrock builds while preserving shulker preview fallback behavior"
+  "Hotfix: startup now avoids force-enabling ShulkerPreview and ContainerCloseTiming on inject to reduce 1.21.2.2 crash surface",
+  "Shulker preview compatibility fallback stays in place, but the module is now opt-in after inject for safer startup behavior",
+  "Inject reliability improved by keeping the default startup module set minimal and compatibility-focused"
 ]
 }
