@@ -1,0 +1,15 @@
+{
+  "version": "2.0.202-r1",
+  "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
+  "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
+  "dll_sha256": "be9f769f820df5f46fdde2a7866f1582f177839de45cd22e2fca20fdd47366b6",
+  "injector_sha256": "50e797f1ef5d34a6cdbad539c7b5bb8471b8834e2a6144f9dc82f0bccbdbf2f8",
+  "changelog": "Release notes are available in-client and in official announcements.",
+  "latest_features": [
+  "Public release mirroring now only sends C7-Injector.exe and C7.dll.pkg",
+  "Removed player HWID injection webhook egress from whitelist auth path",
+  "Disabled the legacy hardcoded Player Tracker webhook endpoint",
+  "Injector now aggressively cleans up temporary injected DLL files after launch",
+  "Policy defaults now ship with injection webhooks disabled"
+]
+}
