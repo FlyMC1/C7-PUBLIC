@@ -1,19 +1,15 @@
 {
-  "version": "2.0.200",
+  "version": "2.0.201",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "fe636df96e3c4f9784ab32cdd1d339e443ea6f0efb943c6f64b8d1e5511273dc",
-  "injector_sha256": "e93eb8ed59bf1c7aa441aa17cded6420a32cd483ab804afb1ae6cc5aa6359023",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.200",
-  "latest_features": [ 
-  "Policy: removed public access for TickTest, ShulkMod/ShulkMod2, ResourcePackChunkFlood, InventoryActionBurst, ContainerCloseTiming, PacketAddresses, PatchTest, OpTest, Player Tracker, ShulkDub/ShulkDub1, and RMod",
-  "Auto Basehunt: restored strict square-spiral checkpoint flight path with persistent, resumable route progress and spacing",
-  "Menu UX: startup loading overlay restored and main menu now uses blacked-out styling with pulsing red bordered actions"
-[ 
-  "Command Manager panel supports direct no-prefix command execution in focused panel input mode",
-  "Command Manager input activation now uses a fully user-configurable Input Keybind (default unbound)",
-  "AutoMapart prioritizes same-block placement batches for more reliable second/third block progression",
-  "AutoMapart ghost rendering budget and radius were increased to improve pending-block visibility",
-  "AutoMapart palette coverage and selectable replacement block list were expanded with modern Bedrock blocks"
+  "dll_sha256": "6c5ab0a006f438865367cec035366ef2748347ffb00e04ee60cee47bc93c05cb",
+  "injector_sha256": "da1b5b0c8575491e88e55b357c08c77f65338474a18fb0e4a86b5b42c4cd41c7",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.201",
+  "latest_features": [
+  "AutoMapart now defers retries per missing target block position instead of repeatedly stalling on the same unplaceable spot",
+  "Added configurable AutoMapart safety sliders: Missing Notify CD, Missing Retry CD, and Place Recheck",
+  "AutoMapart now waits a configurable placement recheck window before reprocessing just-placed targets to reduce ghost disappearance",
+  "AutoMapart target selection/build passes now skip deferred and recheck-pending positions so it keeps placing what is currently available",
+  "AutoMapart default safety timings were increased for more stable behavior on laggy servers"
 ]
 }
