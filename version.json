@@ -2,13 +2,12 @@
   "version": "2.0.199",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "9f8379c210a180e5a07b14278e94474049603d79cdef7bee4ddc8dbcfd8a983c",
-  "injector_sha256": "e54d1f7adfab380d74d6d8f2e00e993b82d0a631d031582a35ab30ca1f2091a8",
+  "dll_sha256": "82bf8eb69705e59b470926e148491ae4f4548c31a002f7f550fb07784a90aa3c",
+  "injector_sha256": "a59dc44e6b922a0a9879cd285ba221e66430886466a147f0f11dc4e075ac45e4",
   "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.199",
   "latest_features": [ 
-  "AutoMapart now places scaffold-style under your feet and around you in radius mode instead of skipping underfoot cells",
-  "AutoWalk Resume now keeps schembuild-like proximity placement and only travels when needed, reducing idle glitch movement",
-  "Improved required block detection with normalized block-name aliases and stronger world/item match checks",
-  "New AutoMapart Block List HUD with toggle, draggable percent position, panel size, and text-size settings"
+  "Policy: removed public access for TickTest, ShulkMod/ShulkMod2, ResourcePackChunkFlood, InventoryActionBurst, ContainerCloseTiming, PacketAddresses, PatchTest, OpTest, Player Tracker, ShulkDub/ShulkDub1, and RMod",
+  "Auto Basehunt: restored strict square-spiral checkpoint flight path with persistent, resumable route progress and spacing",
+  "Menu UX: startup loading overlay restored and main menu now uses blacked-out styling with pulsing red bordered actions"
 ]
 }
