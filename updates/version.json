@@ -1,13 +1,14 @@
 {
-  "version": "2.0.198",
+  "version": "2.0.199",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ae428660c21519f5a2db03d5d098ca2f9f6a255b20d1a420fefd47127e0bfd88",
-  "injector_sha256": "aa3822402f04758a5cf2dda62f4cbedbbd3250df0e396b9b9d616088565d0bb6",
-  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.198",
+  "dll_sha256": "9f8379c210a180e5a07b14278e94474049603d79cdef7bee4ddc8dbcfd8a983c",
+  "injector_sha256": "e54d1f7adfab380d74d6d8f2e00e993b82d0a631d031582a35ab30ca1f2091a8",
+  "changelog": "See release notes at https://github.com/FlyMC1/C7-UTILILY-CLIENT/releases/tag/v2.0.199",
   "latest_features": [ 
-  "Hotfix: startup now avoids force-enabling ShulkerPreview and ContainerCloseTiming on inject to reduce 1.21.2.2 crash surface",
-  "Shulker preview compatibility fallback stays in place, but the module is now opt-in after inject for safer startup behavior",
-  "Inject reliability improved by keeping the default startup module set minimal and compatibility-focused"
+  "AutoMapart now places scaffold-style under your feet and around you in radius mode instead of skipping underfoot cells",
+  "AutoWalk Resume now keeps schembuild-like proximity placement and only travels when needed, reducing idle glitch movement",
+  "Improved required block detection with normalized block-name aliases and stronger world/item match checks",
+  "New AutoMapart Block List HUD with toggle, draggable percent position, panel size, and text-size settings"
 ]
 }
