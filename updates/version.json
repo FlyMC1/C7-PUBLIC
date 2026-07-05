@@ -1,15 +1,15 @@
 {
-  "version": "2.0.203",
+  "version": "2.0.206",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5442c9e799914bd0c67ff9e003b21c86647dd8a497a3db5224eafdc35f5a4b9a",
-  "injector_sha256": "e55f60f225db83bb689bf9a9c64d12d3d1f73fe5d358aa8b9f8dfe31403d2261",
+  "dll_sha256": "d442e159210b51249c157d932d5a33fb4a8fc6a01c2058187bbfdc49e30c39b1",
+  "injector_sha256": "96dc93f031ef09b0609ab5c9cc86453deeba45dc875a529d0cc5bc993538cbd2",
   "changelog": "Release notes are available in-client and in official announcements.",
-  "latest_features": [
-  "AutoMapart now supports Available-Only targeting to focus pathing and placement on blocks currently present in inventory",
-  "AutoMapart targeting and build list selection now stay inventory-aware when Available-Only is enabled",
-  "Added Ghost Refresh setting to periodically recheck nearby map cells and restore missing ghost overlays",
-  "Ghost refresh flow now rehydrates pending cells from the source image when world state does not match expected mapart blocks",
-  "Auto-walk now prioritizes remaining placeable targets more reliably under mixed missing/available inventory states"
+  "latest_features": [ 
+  "AutoBasehunt now uses deterministic corner checkpoints for square-spiral routing, reducing diagonal drift and missed turns",
+  "Added AutoBasehunt Strict Corner Mode and Checkpoint Radius settings so corner-turn strictness can be tuned per server",
+  "Command Manager panel now only engages after entering a world and no longer renders or captures input on the home screen",
+  "Removed RMod module and related hooks/policy entries to eliminate loading-screen overlay flicker from that feature path",
+  "Injector bundled pack install now supports mcpack extraction via staged zip and broader launcher package path detection for default pack activation"
 ]
 }
