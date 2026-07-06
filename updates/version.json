@@ -1,15 +1,15 @@
 {
-  "version": "2.0.206",
+  "version": "2.0.207",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "d442e159210b51249c157d932d5a33fb4a8fc6a01c2058187bbfdc49e30c39b1",
-  "injector_sha256": "96dc93f031ef09b0609ab5c9cc86453deeba45dc875a529d0cc5bc993538cbd2",
+  "dll_sha256": "1ad48a6b104f81ce284423f992c7f1b59d52827d945308c43b16f318b2d42eaf",
+  "injector_sha256": "182f759c704181d236359dd462a99bc5a7da4560c2de29984673096060b2f66b",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "AutoBasehunt now uses deterministic corner checkpoints for square-spiral routing, reducing diagonal drift and missed turns",
-  "Added AutoBasehunt Strict Corner Mode and Checkpoint Radius settings so corner-turn strictness can be tuned per server",
-  "Command Manager panel now only engages after entering a world and no longer renders or captures input on the home screen",
-  "Removed RMod module and related hooks/policy entries to eliminate loading-screen overlay flicker from that feature path",
-  "Injector bundled pack install now supports mcpack extraction via staged zip and broader launcher package path detection for default pack activation"
+  "AutoBasehunt now uses a stronger square-spiral corner pass check so route turns keep advancing instead of stalling into straight-line flight",
+  "Added an AutoBasehunt route HUD panel with next 5 checkpoints, leg direction, and live distance readout",
+  "AutoBasehunt route HUD panel is now draggable and position-scalable with saved settings for consistent layout across sessions",
+  "AutoMapart placement now uses Nukkit-aware pacing and optimistic placement recheck for smoother ghost-to-place sync",
+  "AutoMapart target lock smoothing reduces jitter when transitioning between nearby map cells while keeping render and tick cost low"
 ]
 }
