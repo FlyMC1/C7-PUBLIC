@@ -1,13 +1,13 @@
 {
-  "version": "2.0.208",
+  "version": "2.0.210",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5b3e653230a3f69b1181470c65c9a8aa00cc0742b7b76346349bf9971738459f",
-  "injector_sha256": "17b61253e9ec036dde376edca130f7b5f117b1ce66cd6874b71a9b432d394089",
+  "dll_sha256": "c7b8bfe9f328f4e9d577381e0ef238475c4c1fd64eded1802393073e9aa3751b",
+  "injector_sha256": "a98950c9c8d271d8675f25033aed07c383c290190ab6820ebad0f7f73e03b483",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Fixed the live UI render path so custom texture-backed visuals, the black main-menu backdrop, and shulker preview render again",
-  "AutoMapart now batches one block type at a time to prevent repeated failed swaps when placing mixed block sets",
-  "Improved texture-pack compatibility by refreshing the shared UI render context every screen render instead of a single debug view"
+  "Fixed release build failure by removing unsupported StringSetting registration from CustomNBTTransaction",
+  "Kept .nbttxn runtime string control path intact for custom NBT probe workflows",
+  "Cut clean release metadata for v2.0.210"
 ]
 }
