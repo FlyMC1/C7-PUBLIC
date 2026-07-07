@@ -1,15 +1,13 @@
 {
-  "version": "2.0.207",
+  "version": "2.0.208",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "1ad48a6b104f81ce284423f992c7f1b59d52827d945308c43b16f318b2d42eaf",
-  "injector_sha256": "182f759c704181d236359dd462a99bc5a7da4560c2de29984673096060b2f66b",
+  "dll_sha256": "5b3e653230a3f69b1181470c65c9a8aa00cc0742b7b76346349bf9971738459f",
+  "injector_sha256": "17b61253e9ec036dde376edca130f7b5f117b1ce66cd6874b71a9b432d394089",
   "changelog": "Release notes are available in-client and in official announcements.",
-  "latest_features": [ 
-  "AutoBasehunt now uses a stronger square-spiral corner pass check so route turns keep advancing instead of stalling into straight-line flight",
-  "Added an AutoBasehunt route HUD panel with next 5 checkpoints, leg direction, and live distance readout",
-  "AutoBasehunt route HUD panel is now draggable and position-scalable with saved settings for consistent layout across sessions",
-  "AutoMapart placement now uses Nukkit-aware pacing and optimistic placement recheck for smoother ghost-to-place sync",
-  "AutoMapart target lock smoothing reduces jitter when transitioning between nearby map cells while keeping render and tick cost low"
+  "latest_features": [
+  "Fixed the live UI render path so custom texture-backed visuals, the black main-menu backdrop, and shulker preview render again",
+  "AutoMapart now batches one block type at a time to prevent repeated failed swaps when placing mixed block sets",
+  "Improved texture-pack compatibility by refreshing the shared UI render context every screen render instead of a single debug view"
 ]
 }
