@@ -1,13 +1,14 @@
 {
-  "version": "2.0.210",
+  "version": "2.0.213",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "c7b8bfe9f328f4e9d577381e0ef238475c4c1fd64eded1802393073e9aa3751b",
-  "injector_sha256": "a98950c9c8d271d8675f25033aed07c383c290190ab6820ebad0f7f73e03b483",
+  "dll_sha256": "cbed10ec66986a48088619c430c5746f2e12fd2ae5f59b12e807dd16628f1ffd",
+  "injector_sha256": "a4842fb3d40152ca800a104dd468fc855cca9311c348e22167e36bed8527282f",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Fixed release build failure by removing unsupported StringSetting registration from CustomNBTTransaction",
-  "Kept .nbttxn runtime string control path intact for custom NBT probe workflows",
-  "Cut clean release metadata for v2.0.210"
+  "Restored the black main-menu backdrop and title-screen overlay rendering",
+  "Restored shulker preview rendering through the live hover-render path",
+  "Added CustomNBTTransaction presets and runtime controls for custom NBT workflows",
+  "Improved AutoMapart placement flow and added SchemBuild block-list HUD details"
 ]
 }
