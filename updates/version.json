@@ -1,14 +1,14 @@
 {
-  "version": "2.0.213",
+  "version": "2.0.214",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "cbed10ec66986a48088619c430c5746f2e12fd2ae5f59b12e807dd16628f1ffd",
-  "injector_sha256": "a4842fb3d40152ca800a104dd468fc855cca9311c348e22167e36bed8527282f",
+  "dll_sha256": "478b19bb644d6e49fe660218c1a52393a7eec491696aecf9272ec52c1e90a869",
+  "injector_sha256": "39d25e10885abbb45af7fc376a54db98695bc6f594cb876383baf03bfd1e1800",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Restored the black main-menu backdrop and title-screen overlay rendering",
-  "Restored shulker preview rendering through the live hover-render path",
-  "Added CustomNBTTransaction presets and runtime controls for custom NBT workflows",
-  "Improved AutoMapart placement flow and added SchemBuild block-list HUD details"
+  "Fixed title/menu texture hook flow so custom UI packs render correctly across menu and panel surfaces",
+  "Added Textured Ghost Solid mode for SchemBuild with adjustable texture opacity",
+  "Added Textured Ghost Solid mode for AutoMapart with adjustable texture opacity",
+  "Improved ghost block texture face queuing for full solid textured cube previews"
 ]
 }
