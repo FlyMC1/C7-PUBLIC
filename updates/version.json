@@ -1,14 +1,14 @@
 {
-  "version": "2.0.214",
+  "version": "2.0.215",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "478b19bb644d6e49fe660218c1a52393a7eec491696aecf9272ec52c1e90a869",
-  "injector_sha256": "39d25e10885abbb45af7fc376a54db98695bc6f594cb876383baf03bfd1e1800",
+  "dll_sha256": "c7adc277e664ec66a0b188f6447ba36b3c5b940cea09451d22ea528281d05390",
+  "injector_sha256": "7d10156ba0265858b8391aada8760103e7d519d6948b11b43a0ed26c36e2a3d0",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Fixed title/menu texture hook flow so custom UI packs render correctly across menu and panel surfaces",
-  "Added Textured Ghost Solid mode for SchemBuild with adjustable texture opacity",
-  "Added Textured Ghost Solid mode for AutoMapart with adjustable texture opacity",
-  "Improved ghost block texture face queuing for full solid textured cube previews"
+  "Fixed main menu title replacement so CIRCLE7 no longer overlaps the Minecraft logo",
+  "Restricted menu/title background hooks to real title screens so loading transitions no longer flash menu overlays",
+  "Applied metallic-black styling to in-game custom panels including CommandPanel, TravelModule, and InventoryViewer",
+  "Added global container-panel metallic overlay pass for inventory, crafting table, anvil, chest, furnace, loom, smithing, and related screens"
 ]
 }
