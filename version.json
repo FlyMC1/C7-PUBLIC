@@ -1,14 +1,14 @@
 {
-  "version": "2.0.218",
+  "version": "2.0.219",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "1e5a2bf7eb1e88cba1386e2c10e5de3454ce2bea7f59792d0112bdd22ab01774",
-  "injector_sha256": "009add5b5dab1c41f752f37bbf10f344731c88f48426f43f7d66e637879cfb89",
+  "dll_sha256": "ad8784ff8933784d7a694dbc13371ca9cd71c815a0dcea0d9c8bd06e96c27ba3",
+  "injector_sha256": "e1f3f8779036cb26ea3aded73e6ee170efed9493f69765011ad327545dad3bb3",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Simplified launcher Client tab to a clean launch-first flow with Launch C7 centered under tab navigation",
-  "World DL tab now uses Open Saved Folder shortcut to Minecraft AppData resource_packs location",
-  "Reworked Schem Build into Image/Schem Upload with direct file imports to AutoBuild and Maparts folders",
-  "Applied rounded red-border black-fill button styling with larger white text across tabs and actions"
+  "Centered Launch C7 helper text on Client tab and lowered Launch button for cleaner spacing",
+  "World DL Open Saved Folder now targets Minecraft AppData minecraftWorlds instead of resource_packs",
+  "Moved World DL export detail text below Folder mode button so it no longer overlaps or hides",
+  "Reverted main-menu Circle7 title hook to older stable detection path and increased title size"
 ]
 }
