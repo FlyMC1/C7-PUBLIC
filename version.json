@@ -1,14 +1,14 @@
 {
-  "version": "2.0.216",
+  "version": "2.0.217",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "be175a26f71afb2872b93ed88b88bbc04df3ab828d29c2120662eb8aab29f7f0",
-  "injector_sha256": "2d5c7d5f29a42dfd40dd92b7a63dd17cb7a353925817cda17925adcc1679ccfd",
+  "dll_sha256": "5c8d2667b3ed70be55aec5fd924c6ef332f397aed2c71c0e1cb2f4fffddbcd76",
+  "injector_sha256": "a931fcb5c23dae6c1120701f5f5f75b99f7166f103729b1d4f0ecf9a9180012a",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Restored vanilla main menu title rendering path so the title is visible again",
-  "Disabled unstable global menu/container overlay passes that caused blank UI rendering",
-  "Removed aggressive container panel interception from shared DrawImage callback",
-  "Stabilized world join render flow to prevent the latest menu/UI-related crash path"
+  "Added built-in Bedrock dark UI pack (1.21.2.2) to injector to-add flow as folder + mcpack",
+  "Applied Circle7 black/red button styling and white text via shared common button overrides",
+  "Added broad dark panel texture replacements for inventory/crafting/anvil/container-style screens",
+  "Switched to safe texture-first menu darkening and removed risky full start-screen layout replacement"
 ]
 }
