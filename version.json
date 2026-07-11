@@ -1,14 +1,14 @@
 {
-  "version": "2.0.219",
+  "version": "2.0.220",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ad8784ff8933784d7a694dbc13371ca9cd71c815a0dcea0d9c8bd06e96c27ba3",
-  "injector_sha256": "e1f3f8779036cb26ea3aded73e6ee170efed9493f69765011ad327545dad3bb3",
+  "dll_sha256": "4fe4f60e237ad5e488b3cd5979ab6bb2a1f4119c2ba469fda14e3537a0d55842",
+  "injector_sha256": "2846147265bb01effbe2d2b3174acfe868788e9bd5262cb4e2fce742ec6f0837",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Centered Launch C7 helper text on Client tab and lowered Launch button for cleaner spacing",
-  "World DL Open Saved Folder now targets Minecraft AppData minecraftWorlds instead of resource_packs",
-  "Moved World DL export detail text below Folder mode button so it no longer overlaps or hides",
-  "Reverted main-menu Circle7 title hook to older stable detection path and increased title size"
+  "Replaced vanilla Minecraft title draw with Circle7 title render on main menu",
+  "Increased Circle7 main-menu title scale to 2x for stronger header visibility",
+  "Removed legacy schem source-list/radio persistence so old uploaded entries never repopulate UI",
+  "Kept Client tab launch-only behavior while preserving direct import actions under Image/Schem Upload"
 ]
 }
