@@ -1,14 +1,13 @@
 {
-  "version": "2.0.221",
+  "version": "2.0.222",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "dbd34c63500fd7f1c673d7a71620c9a07bb9af350e0aba4012a92bc91be1f755",
-  "injector_sha256": "037ce3decf2703d952b349bbe3aa089f2c7070e190633a611c75652b3b89a5a1",
+  "dll_sha256": "ef180fbae7a38a77c87e60bbc3e0f7a3e0e428330c51674cd0d94065c96b0823",
+  "injector_sha256": "fe6c1900a82add7ebf9206a1490165a7da3bfbb4783930f6a0aaf730166a9b3e",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Replaced title-screen backdrop with full black overlay while keeping vanilla interaction hitboxes",
-  "Redrew title-screen main buttons with launcher-style black fill and red border",
-  "Matched Dressing Room button to launcher styling in lower-right position",
-  "Kept Circle7 title/version at title anchor while suppressing vanilla title visuals"
+  "World DL Open Saved Folder now opens the C7 AppData WorldDownloads directory",
+  "World Download exports are now pinned to RoamingState/C7-Client/WorldDownloads with duplicate-folder safeguards",
+  "Main menu overlay render gating was tightened to prevent world-load flashing and improve start-screen consistency"
 ]
 }
