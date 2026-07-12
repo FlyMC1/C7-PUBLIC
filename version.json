@@ -1,13 +1,13 @@
 {
-  "version": "2.0.223",
+  "version": "2.0.224",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "0b8d0f49d84cea0e16193b9979c3b0b1fc4d312f2770d52b06e2444cff7bfb28",
-  "injector_sha256": "52902ff44bfcc603b2d7290cc03091cf3daff812e28f9a882ab7573e3ab10d7d",
+  "dll_sha256": "358f87fe8be30a42695262db7e4d098836a931feb3ac9d49a74d6d9fcc763da1",
+  "injector_sha256": "0c2c522b11455559fe75445aba7792f27a958a8db89c64c431b75acbd36fc963",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Main menu now uses D2D-rendered CIRCLE7 title text integrated into the new black/red theme",
-  "UI panels gained animated red pulse borders with a darker layered 3D panel treatment",
-  "Themed overlays now target title, front-menu panels, pause, inventories, and container-style screens"
+  "Fixed front-menu overlay routing so menus no longer collapse into a single oversized panel",
+  "Adjusted front-menu and in-game themed panel geometry to preserve vanilla button visibility and alignment",
+  "Expanded in-game overlay detection with HUD/transient exclusions so pause/inventory/container theming now applies consistently"
 ]
 }
