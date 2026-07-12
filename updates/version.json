@@ -1,13 +1,13 @@
 {
-  "version": "2.0.225",
+  "version": "2.0.226",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "43f4c029f57bc00f8101eb1ce857a79ab527ff98d50330386870f84c43ff13e3",
-  "injector_sha256": "856906cbece042e73058a28eb07eb1256da26a21172525fde613b9176e1d7a50",
+  "dll_sha256": "21ddcf4b993fe998a7afcb01d52fbb94529f27e663f5382986486a65e80be597",
+  "injector_sha256": "ac6ae2395bad21fb8e7dbc7587cae01ee658cf355e5204d11348342b529d4508",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Rolled back D2D theming to title-text-only rendering for menu stability",
-  "Disabled front-menu and in-game panel overlays pending a safer rework",
-  "Added transient screen guards (debug/toast/loading/progress) to prevent title overlay flashing during transitions"
+  "Restored main menu title text rendering path from v2.0.220 settings",
+  "DrawImage hook now renders CIRCLE7 title text directly via drawMenuTitle at captured title bounds",
+  "Maintains title texture suppression while preserving vanilla menu layout and interaction"
 ]
 }
