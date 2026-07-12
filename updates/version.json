@@ -1,13 +1,13 @@
 {
-  "version": "2.0.222",
+  "version": "2.0.223",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ef180fbae7a38a77c87e60bbc3e0f7a3e0e428330c51674cd0d94065c96b0823",
-  "injector_sha256": "fe6c1900a82add7ebf9206a1490165a7da3bfbb4783930f6a0aaf730166a9b3e",
+  "dll_sha256": "0b8d0f49d84cea0e16193b9979c3b0b1fc4d312f2770d52b06e2444cff7bfb28",
+  "injector_sha256": "52902ff44bfcc603b2d7290cc03091cf3daff812e28f9a882ab7573e3ab10d7d",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "World DL Open Saved Folder now opens the C7 AppData WorldDownloads directory",
-  "World Download exports are now pinned to RoamingState/C7-Client/WorldDownloads with duplicate-folder safeguards",
-  "Main menu overlay render gating was tightened to prevent world-load flashing and improve start-screen consistency"
+  "Main menu now uses D2D-rendered CIRCLE7 title text integrated into the new black/red theme",
+  "UI panels gained animated red pulse borders with a darker layered 3D panel treatment",
+  "Themed overlays now target title, front-menu panels, pause, inventories, and container-style screens"
 ]
 }
