@@ -1,13 +1,13 @@
 {
-  "version": "2.0.224",
+  "version": "2.0.225",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "358f87fe8be30a42695262db7e4d098836a931feb3ac9d49a74d6d9fcc763da1",
-  "injector_sha256": "0c2c522b11455559fe75445aba7792f27a958a8db89c64c431b75acbd36fc963",
+  "dll_sha256": "43f4c029f57bc00f8101eb1ce857a79ab527ff98d50330386870f84c43ff13e3",
+  "injector_sha256": "856906cbece042e73058a28eb07eb1256da26a21172525fde613b9176e1d7a50",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Fixed front-menu overlay routing so menus no longer collapse into a single oversized panel",
-  "Adjusted front-menu and in-game themed panel geometry to preserve vanilla button visibility and alignment",
-  "Expanded in-game overlay detection with HUD/transient exclusions so pause/inventory/container theming now applies consistently"
+  "Rolled back D2D theming to title-text-only rendering for menu stability",
+  "Disabled front-menu and in-game panel overlays pending a safer rework",
+  "Added transient screen guards (debug/toast/loading/progress) to prevent title overlay flashing during transitions"
 ]
 }
