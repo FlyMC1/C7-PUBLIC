@@ -1,13 +1,13 @@
 {
-  "version": "2.0.226",
+  "version": "2.0.227",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "21ddcf4b993fe998a7afcb01d52fbb94529f27e663f5382986486a65e80be597",
-  "injector_sha256": "ac6ae2395bad21fb8e7dbc7587cae01ee658cf355e5204d11348342b529d4508",
+  "dll_sha256": "0865336045cc586c97fc18509f9d5135fd37025eb59a3e9af7cce769acba2f0c",
+  "injector_sha256": "e27e780c06c4b17a8b8ce029b1229d448e3310ba2b546add825669d9dfe8eaf9",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
-  "Restored main menu title text rendering path from v2.0.220 settings",
-  "DrawImage hook now renders CIRCLE7 title text directly via drawMenuTitle at captured title bounds",
-  "Maintains title texture suppression while preserving vanilla menu layout and interaction"
+  "Added in-game Auto Basehunt height adjust keybinds for instant raise/lower route control",
+  "Auto Obstacle Clearance now dynamically climbs over terrain and returns to base route height when safe",
+  "Webhook alerts can now face the target, capture a screenshot, save it in AppData, and upload it with the alert"
 ]
 }
