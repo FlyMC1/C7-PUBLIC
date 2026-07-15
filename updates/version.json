@@ -1,9 +1,9 @@
 {
-  "version": "2.0.231",
+  "version": "2.0.233",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "ad407212b838aaae4ee5fa6ae7d643dc0ae644faa86ea3919e3f887ab767e078",
-  "injector_sha256": "95b731f5739de4129f2957c88cbfef4aef601db0ceedb27502b662f3ca9e3529",
+  "dll_sha256": "07d22673172b275dcef11d17893670bb49c78d6acb03a16272ddb81c9291ea63",
+  "injector_sha256": "2887f9f52f8a7486a0cd49792d1493d6706ea6f0b6384f6ff57087ad5bc6651b",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [ 
   "Added in-game Auto Basehunt height adjust keybinds for instant raise/lower route control",
