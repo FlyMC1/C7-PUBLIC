@@ -1,11 +1,11 @@
 {
-  "version": "2.0.235",
+  "version": "2.0.236",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "5749b7d1fc2cc3c8ce8d52bbbf4ee2659c34f0f4b8dc3abc9d354dd9e581266b",
-  "injector_sha256": "361127f089a0134c8b9987163e8d79f9b0339f4f6d4c0c5066a05778ade65c67",
+  "dll_sha256": "63b0f7ddc61ec9236fa146d96b266eeb91926abd318652c6f75229ae779a3123",
+  "injector_sha256": "e134dcc605f0de9a295cb4a63ac54f4942948f1bb8fbbe72bcabfa1b98042672",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-  "Injector schematic and image imports now use Minecraft's nested AC package RoamingState paths."
+  "Added .schembuild reset with right-click ghost-corner placement."
 ]
 }
