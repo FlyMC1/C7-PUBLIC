@@ -1,12 +1,11 @@
 {
-  "version": "2.0.234",
+  "version": "2.0.235",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "7bf328577430153e01e0df63753bcbb932800b68d87cb7f16e64bb137c391eb5",
-  "injector_sha256": "2f7d23aeaf7068e7a6b3d8c668d4d11b9087ae3ee2cb79650be90ae40490140b",
+  "dll_sha256": "5749b7d1fc2cc3c8ce8d52bbbf4ee2659c34f0f4b8dc3abc9d354dd9e581266b",
+  "injector_sha256": "361127f089a0134c8b9987163e8d79f9b0339f4f6d4c0c5066a05778ade65c67",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
-	"SchemBuild now loads injector-selected schematics from C7-Client\\AutoBuild.",
-	"AutoMapart now loads injector-selected images from C7-Client\\Maparts."
+  "Injector schematic and image imports now use Minecraft's nested AC package RoamingState paths."
 ]
 }
