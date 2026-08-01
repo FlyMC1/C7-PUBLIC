@@ -1,13 +1,12 @@
 {
-  "version": "2.0.233",
+  "version": "2.0.234",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "07d22673172b275dcef11d17893670bb49c78d6acb03a16272ddb81c9291ea63",
-  "injector_sha256": "2887f9f52f8a7486a0cd49792d1493d6706ea6f0b6384f6ff57087ad5bc6651b",
+  "dll_sha256": "7bf328577430153e01e0df63753bcbb932800b68d87cb7f16e64bb137c391eb5",
+  "injector_sha256": "2f7d23aeaf7068e7a6b3d8c668d4d11b9087ae3ee2cb79650be90ae40490140b",
   "changelog": "Release notes are available in-client and in official announcements.",
-  "latest_features": [ 
-  "Added in-game Auto Basehunt height adjust keybinds for instant raise/lower route control",
-  "Auto Obstacle Clearance now dynamically climbs over terrain and returns to base route height when safe",
-  "Webhook alerts can now face the target, capture a screenshot, save it in AppData, and upload it with the alert"
+  "latest_features": [
+	"SchemBuild now loads injector-selected schematics from C7-Client\\AutoBuild.",
+	"AutoMapart now loads injector-selected images from C7-Client\\Maparts."
 ]
 }
