@@ -2,8 +2,8 @@
   "version": "2.0.236",
   "dll_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7.dll.pkg",
   "injector_url": "https://github.com/FlyMC1/C7-PUBLIC/releases/latest/download/C7-Injector.exe",
-  "dll_sha256": "63b0f7ddc61ec9236fa146d96b266eeb91926abd318652c6f75229ae779a3123",
-  "injector_sha256": "e134dcc605f0de9a295cb4a63ac54f4942948f1bb8fbbe72bcabfa1b98042672",
+  "dll_sha256": "907a2a7f52bb4a26e9f9c83855bb09824f224369da37a87173d6214008c4e33e",
+  "injector_sha256": "26574ca2aef5018b61df05e00aac27fccf860ba306623b62a504d7eaea7b6b76",
   "changelog": "Release notes are available in-client and in official announcements.",
   "latest_features": [
   "Added .schembuild reset with right-click ghost-corner placement."
